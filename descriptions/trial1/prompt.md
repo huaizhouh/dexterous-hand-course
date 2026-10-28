@@ -1,0 +1,5 @@
+现在需要三指/四指灵巧手，在本地无solidworks的条件下直接生成一个可导入的文件，类似descriptions/new中的内容，请将主要在descriptions/trial1 下完成
+请基于提供的建模素材descriptions/support_frames，和现有的零件统计hardware_list.png进行设计。请在完成功能完善的灵巧手基础上，尽量减少超出零件数量的设计，若有超出或设计了新的零件，需要跟我返回一个 补充零件 的清单
+查看“灵巧手课程成果展示 - 2026年春.pdf”，你可以选择一种方案进行实现，同时需要告诉我实现的是哪一种方案。
+
+在此基础上，还需要你的设计出的成品能显示在仓库内的仿真程序上，即类似run_underactuated_soft_3_finger_hand.py，运行conda环境为 newton
