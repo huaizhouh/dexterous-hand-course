@@ -1,0 +1,60 @@
+{
+  "open": {
+    "step_reimport_valid": true,
+    "expected_solids": 58,
+    "actual_solids": 58,
+    "invalid_solids": [],
+    "bounding_box_mm": [
+      160.0,
+      190.0,
+      148.414
+    ],
+    "intentional_cable_anchor_embeddings": [
+      {
+        "a": "thumb_tendon_anchor",
+        "b": "thumb_flexor_tendon",
+        "volume_mm3": 0.13810287157701212
+      },
+      {
+        "a": "index_tendon_anchor",
+        "b": "index_flexor_tendon",
+        "volume_mm3": 0.13810287157701215
+      },
+      {
+        "a": "middle_tendon_anchor",
+        "b": "middle_flexor_tendon",
+        "volume_mm3": 0.13810287157701187
+      }
+    ],
+    "intersections_over_0_02_mm3": []
+  },
+  "grasp_ready": {
+    "step_reimport_valid": true,
+    "expected_solids": 58,
+    "actual_solids": 58,
+    "invalid_solids": [],
+    "bounding_box_mm": [
+      160.0,
+      190.0,
+      140.33402998023078
+    ],
+    "intentional_cable_anchor_embeddings": [
+      {
+        "a": "thumb_tendon_anchor",
+        "b": "thumb_flexor_tendon",
+        "volume_mm3": 0.13810285123172905
+      },
+      {
+        "a": "index_tendon_anchor",
+        "b": "index_flexor_tendon",
+        "volume_mm3": 0.13810289766939396
+      },
+      {
+        "a": "middle_tendon_anchor",
+        "b": "middle_flexor_tendon",
+        "volume_mm3": 0.13810289766942851
+      }
+    ],
+    "intersections_over_0_02_mm3": []
+  }
+}

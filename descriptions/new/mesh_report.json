@@ -1,0 +1,24 @@
+{
+  "tendon_three_finger_hand_open.stl": {
+    "triangles": 202302,
+    "bounds_mm": [
+      160.0,
+      190.0,
+      148.41399478912354
+    ],
+    "watertight": false,
+    "winding_consistent": true,
+    "volume_mm3": 436284.2179220747
+  },
+  "tendon_three_finger_hand_grasp_ready.stl": {
+    "triangles": 204572,
+    "bounds_mm": [
+      160.0,
+      190.0,
+      140.33402347564697
+    ],
+    "watertight": false,
+    "winding_consistent": true,
+    "volume_mm3": 436263.4044030415
+  }
+}

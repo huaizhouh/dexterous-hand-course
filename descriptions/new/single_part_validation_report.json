@@ -1,0 +1,32 @@
+{
+  "tendon_three_finger_hand_open_single_part.step": {
+    "products": 1,
+    "assembly_occurrences": 0,
+    "solids": 58,
+    "valid": true,
+    "volume_delta_mm3": -1.9208528101444244e-09,
+    "bounds_delta_mm": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "tendon_three_finger_hand_grasp_ready_single_part.step": {
+    "products": 1,
+    "assembly_occurrences": 0,
+    "solids": 58,
+    "valid": true,
+    "volume_delta_mm3": 7.62520357966423e-09,
+    "bounds_delta_mm": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+}

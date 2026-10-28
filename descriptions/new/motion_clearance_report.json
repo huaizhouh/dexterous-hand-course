@@ -1,0 +1,93 @@
+[
+  {
+    "fraction": 0.125,
+    "angles_deg": [
+      2.25,
+      4.0
+    ],
+    "intersections_over_0_02_mm3": [],
+    "tendon_lengths_mm": {
+      "thumb": 136.35674360105327,
+      "index": 136.35674360105327,
+      "middle": 136.35674360105327
+    }
+  },
+  {
+    "fraction": 0.25,
+    "angles_deg": [
+      4.5,
+      8.0
+    ],
+    "intersections_over_0_02_mm3": [],
+    "tendon_lengths_mm": {
+      "thumb": 134.6720493076388,
+      "index": 134.6720493076388,
+      "middle": 134.6720493076388
+    }
+  },
+  {
+    "fraction": 0.375,
+    "angles_deg": [
+      6.75,
+      12.0
+    ],
+    "intersections_over_0_02_mm3": [],
+    "tendon_lengths_mm": {
+      "thumb": 132.9600592950314,
+      "index": 132.9600592950314,
+      "middle": 132.9600592950314
+    }
+  },
+  {
+    "fraction": 0.5,
+    "angles_deg": [
+      9.0,
+      16.0
+    ],
+    "intersections_over_0_02_mm3": [],
+    "tendon_lengths_mm": {
+      "thumb": 131.22531476907812,
+      "index": 131.22531476907812,
+      "middle": 131.22531476907812
+    }
+  },
+  {
+    "fraction": 0.625,
+    "angles_deg": [
+      11.25,
+      20.0
+    ],
+    "intersections_over_0_02_mm3": [],
+    "tendon_lengths_mm": {
+      "thumb": 129.47281568548183,
+      "index": 129.47281568548183,
+      "middle": 129.47281568548183
+    }
+  },
+  {
+    "fraction": 0.75,
+    "angles_deg": [
+      13.5,
+      24.0
+    ],
+    "intersections_over_0_02_mm3": [],
+    "tendon_lengths_mm": {
+      "thumb": 127.70809140143375,
+      "index": 127.70809140143375,
+      "middle": 127.70809140143375
+    }
+  },
+  {
+    "fraction": 0.875,
+    "angles_deg": [
+      15.75,
+      28.0
+    ],
+    "intersections_over_0_02_mm3": [],
+    "tendon_lengths_mm": {
+      "thumb": 125.9372833412073,
+      "index": 125.9372833412073,
+      "middle": 125.9372833412073
+    }
+  }
+]

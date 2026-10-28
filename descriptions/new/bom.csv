@@ -1,0 +1,14 @@
+﻿part,quantity,source,notes
+palm,1,custom_parts/palm.step,
+小U连接件_钻孔副本,6,小U连接件.SLDPRT + modified_parts/small_u_drilled.step,
+长U支架,3,长U支架.SLDPRT,
+interphalangeal_adapter,3,custom_parts/interphalangeal_adapter.step,
+短U支架,3,短U支架.SLDPRT,
+fingertip_carrier,3,custom_parts/fingertip_carrier.step,
+fingertip_pad,3,custom_parts/fingertip_pad.step,
+tendon_anchor,3,custom_parts/tendon_anchor.step,
+金属主舵盘,6,金属主舵盘.SLDPRT,
+journal_bushing,12,custom_parts/journal_bushing.step,
+金属从舵盘,6,金属从舵盘.SLDPRT,
+hinge_pin,6,custom_parts/hinge_pin.step,
+flexor_tendon,3,assembly_manifest.json: tendons,diameter 0.8 mm; routing reference
