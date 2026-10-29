@@ -1,0 +1,2 @@
+腱绳驱动，三指两自由度，完成在descriptions/trial2中，不要利用descriptions/new和descriptions/trial1里的文件
+可以使用现有图纸(descriptions/support_frames)，不用考虑数量，但优先表现的更好，允许新增图纸，新增的需要单独有可导入soildworks的文件，也需要完整的可导入soildworks的文件，需要完整的仿真文件

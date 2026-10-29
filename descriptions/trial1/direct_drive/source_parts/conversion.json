@@ -1,0 +1,13 @@
+[
+  {
+    "ok": true,
+    "warnings": [],
+    "solids": 1,
+    "faces": 43,
+    "bodies": [
+      "Body"
+    ],
+    "source": "descriptions/support_frames/长U支架.SLDPRT",
+    "sha256": "55af2e3ed66783e2385e918d3d3c454fcc101d071ad434631b521dc6fa954b18"
+  }
+]

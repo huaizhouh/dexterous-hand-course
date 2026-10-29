@@ -1,0 +1,174 @@
+{
+  "parts": [
+    {
+      "name": "palm",
+      "custom": true,
+      "solids": 1,
+      "volume_mm3": 150971.2746129665
+    },
+    {
+      "name": "root_clevis",
+      "custom": true,
+      "solids": 1,
+      "volume_mm3": 7707.0004238817455
+    },
+    {
+      "name": "proximal",
+      "custom": true,
+      "solids": 1,
+      "volume_mm3": 7959.627535990408
+    },
+    {
+      "name": "distal",
+      "custom": true,
+      "solids": 1,
+      "volume_mm3": 5787.221200038101
+    },
+    {
+      "name": "root_fasteners",
+      "custom": false,
+      "solids": 8,
+      "volume_mm3": 613.317425797067
+    },
+    {
+      "name": "carrier_fasteners",
+      "custom": false,
+      "solids": 8,
+      "volume_mm3": 751.160947219804
+    },
+    {
+      "name": "clamp_screws",
+      "custom": false,
+      "solids": 2,
+      "volume_mm3": 173.07819326789567
+    },
+    {
+      "name": "contact_pad",
+      "custom": true,
+      "solids": 1,
+      "volume_mm3": 732.2091011988944
+    },
+    {
+      "name": "winch_hub",
+      "custom": true,
+      "solids": 1,
+      "volume_mm3": 963.4057009749915
+    },
+    {
+      "name": "winch_drum",
+      "custom": true,
+      "solids": 1,
+      "volume_mm3": 1349.3085604410471
+    },
+    {
+      "name": "motor_carrier",
+      "custom": true,
+      "solids": 1,
+      "volume_mm3": 24740.313680535743
+    },
+    {
+      "name": "motor_body",
+      "custom": false,
+      "solids": 1,
+      "volume_mm3": 31788.68649746883
+    },
+    {
+      "name": "motor_horn",
+      "custom": false,
+      "solids": 1,
+      "volume_mm3": 750.525630286735
+    },
+    {
+      "name": "winch_retainer",
+      "custom": false,
+      "solids": 2,
+      "volume_mm3": 99.69530126901851
+    },
+    {
+      "name": "hub_fasteners",
+      "custom": false,
+      "solids": 8,
+      "volume_mm3": 161.57534470827204
+    },
+    {
+      "name": "hinge_bolt",
+      "custom": true,
+      "solids": 1,
+      "volume_mm3": 323.19134423804996
+    },
+    {
+      "name": "hinge_nut",
+      "custom": false,
+      "solids": 1,
+      "volume_mm3": 43.57149905109456
+    },
+    {
+      "name": "hinge_spacers",
+      "custom": false,
+      "solids": 2,
+      "volume_mm3": 88.05255889481475
+    },
+    {
+      "name": "torsion_spring_envelope",
+      "custom": false,
+      "solids": 1,
+      "volume_mm3": 45.615925330123794
+    },
+    {
+      "name": "liner",
+      "custom": false,
+      "solids": 1,
+      "volume_mm3": 44.76769531365454
+    },
+    {
+      "name": "tendon_stop",
+      "custom": false,
+      "solids": 1,
+      "volume_mm3": 3.053628059289279
+    }
+  ],
+  "assemblies": [
+    {
+      "file": "tendon_hand_open.step",
+      "solids": 151,
+      "valid": true,
+      "volume_mm3": 405089.8711984514,
+      "bounds_mm": [
+        -100.0,
+        -100.0,
+        -49.0,
+        100.0,
+        100.0,
+        96.0
+      ]
+    },
+    {
+      "file": "tendon_hand_open_multibody.step",
+      "solids": 151,
+      "valid": true,
+      "volume_mm3": 405089.8711984514,
+      "bounds_mm": [
+        -100.0,
+        -100.0,
+        -49.0,
+        100.0,
+        100.0,
+        96.0
+      ]
+    },
+    {
+      "file": "tendon_hand_grasp.step",
+      "solids": 151,
+      "valid": true,
+      "volume_mm3": 405072.87026402936,
+      "bounds_mm": [
+        -100.0,
+        -100.0,
+        -49.0,
+        100.0,
+        100.0,
+        74.50654799608093
+      ]
+    }
+  ]
+}

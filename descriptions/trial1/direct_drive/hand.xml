@@ -1,0 +1,85 @@
+<mujoco model="direct_drive_three_finger">
+  <compiler angle="radian" meshdir="meshes" autolimits="true" />
+  <option timestep="0.001" gravity="0 0 -9.81" integrator="implicitfast" iterations="100" />
+  <statistic center="0 0 0.04" extent="0.3" />
+  <visual>
+    <global offwidth="1100" offheight="900" />
+    <headlight ambient="0.5 0.5 0.5" diffuse="0.65 0.65 0.65" />
+  </visual>
+  <asset>
+    <texture name="sky" type="skybox" builtin="gradient" rgb1="0.3 0.37 0.45" rgb2="0.75 0.8 0.85" width="512" height="3072" />
+    <mesh name="servo" file="servo.stl" scale="0.001 0.001 0.001" />
+    <mesh name="horn_follower" file="horn_follower.stl" scale="0.001 0.001 0.001" />
+    <mesh name="horn_main" file="horn_main.stl" scale="0.001 0.001 0.001" />
+    <mesh name="long_u" file="long_u.stl" scale="0.001 0.001 0.001" />
+    <mesh name="pad" file="pad.stl" scale="0.001 0.001 0.001" />
+    <mesh name="palm" file="palm.stl" scale="0.001 0.001 0.001" />
+    <mesh name="fasteners" file="fasteners.stl" scale="0.001 0.001 0.001" />
+    <mesh name="ties" file="ties.stl" scale="0.001 0.001 0.001" />
+  </asset>
+  <worldbody>
+    <light pos="0 -0.2 0.4" dir="0 0 -1" diffuse="0.8 0.8 0.8" />
+    <geom name="pedestal" type="cylinder" pos="0 0 0.01" size="0.034 0.01" rgba="0.48 0.48 0.5 1" friction="2 0.02 0.002" solref="0.003 1" solimp="0.99 0.999 0.0001" />
+    <body name="rig">
+      <joint name="lift" type="slide" axis="0 0 1" range="0 0.06" damping="30" />
+      <inertial pos="0 0 0.01" mass="2" diaginertia="0.02 0.02 0.02" />
+      <geom name="palm" type="mesh" mesh="palm" rgba="0.21 0.27 0.34 1" contype="0" conaffinity="0" />
+      <geom name="palm_contact_left" type="box" pos="-0.0745 0 0.002" size="0.0375 0.07 0.002" rgba="0 0 0 0" mass="0" contype="1" conaffinity="1" />
+      <geom name="palm_contact_right" type="box" pos="0.0745 0 0.002" size="0.0375 0.07 0.002" rgba="0 0 0 0" mass="0" contype="1" conaffinity="1" />
+      <geom name="palm_contact_front" type="box" pos="0 0.0745 0.002" size="0.037 0.0375 0.002" rgba="0 0 0 0" mass="0" contype="1" conaffinity="1" />
+      <geom name="palm_contact_back" type="box" pos="0 -0.0745 0.002" size="0.037 0.0375 0.002" rgba="0 0 0 0" mass="0" contype="1" conaffinity="1" />
+      <body name="unit1" pos="-0.000000000000 0.070000000000 0.02" euler="0 0 0.000000000000">
+        <geom name="ties1" type="mesh" mesh="ties" rgba="0.8 0.8 0.78 1" contype="0" conaffinity="0" />
+        <geom name="servo1" type="mesh" mesh="servo" rgba="0.18 0.21 0.24 1" contype="0" conaffinity="0" />
+        <body name="finger1">
+          <joint name="joint1" type="hinge" axis="1 0 0" range="0 0.75" damping="0.025" armature="0.0005" />
+          <inertial pos="0 0 0.02" mass="0.22" diaginertia="0.0002 0.0002 0.0002" />
+          <geom name="horn_follower1" type="mesh" mesh="horn_follower" rgba="0.85 0.65 0.22 1" contype="0" conaffinity="0" />
+          <geom name="horn_main1" type="mesh" mesh="horn_main" rgba="0.85 0.65 0.22 1" contype="0" conaffinity="0" />
+          <geom name="long_u1" type="mesh" mesh="long_u" rgba="0.65 0.71 0.76 1" contype="0" conaffinity="0" />
+          <geom name="pad1" type="mesh" mesh="pad" rgba="0.12 0.12 0.12 1" contype="0" conaffinity="0" />
+          <geom name="fasteners1" type="mesh" mesh="fasteners" rgba="0.72 0.72 0.68 1" contype="0" conaffinity="0" />
+          <geom name="pad_collision1" type="box" pos="0 -0.0085 0.035" size="0.014 0.004 0.015" rgba="0 0 0 0" friction="2 0.02 0.002" solref="0.003 1" solimp="0.99 0.999 0.0001" mass="0" contype="1" conaffinity="1" />
+        </body>
+      </body>
+      <body name="unit2" pos="-0.060621778265 -0.035000000000 0.02" euler="0 0 2.094395102393">
+        <geom name="ties2" type="mesh" mesh="ties" rgba="0.8 0.8 0.78 1" contype="0" conaffinity="0" />
+        <geom name="servo2" type="mesh" mesh="servo" rgba="0.18 0.21 0.24 1" contype="0" conaffinity="0" />
+        <body name="finger2">
+          <joint name="joint2" type="hinge" axis="1 0 0" range="0 0.75" damping="0.025" armature="0.0005" />
+          <inertial pos="0 0 0.02" mass="0.22" diaginertia="0.0002 0.0002 0.0002" />
+          <geom name="horn_follower2" type="mesh" mesh="horn_follower" rgba="0.85 0.65 0.22 1" contype="0" conaffinity="0" />
+          <geom name="horn_main2" type="mesh" mesh="horn_main" rgba="0.85 0.65 0.22 1" contype="0" conaffinity="0" />
+          <geom name="long_u2" type="mesh" mesh="long_u" rgba="0.65 0.71 0.76 1" contype="0" conaffinity="0" />
+          <geom name="pad2" type="mesh" mesh="pad" rgba="0.12 0.12 0.12 1" contype="0" conaffinity="0" />
+          <geom name="fasteners2" type="mesh" mesh="fasteners" rgba="0.72 0.72 0.68 1" contype="0" conaffinity="0" />
+          <geom name="pad_collision2" type="box" pos="0 -0.0085 0.035" size="0.014 0.004 0.015" rgba="0 0 0 0" friction="2 0.02 0.002" solref="0.003 1" solimp="0.99 0.999 0.0001" mass="0" contype="1" conaffinity="1" />
+        </body>
+      </body>
+      <body name="unit3" pos="0.060621778265 -0.035000000000 0.02" euler="0 0 4.188790204786">
+        <geom name="ties3" type="mesh" mesh="ties" rgba="0.8 0.8 0.78 1" contype="0" conaffinity="0" />
+        <geom name="servo3" type="mesh" mesh="servo" rgba="0.18 0.21 0.24 1" contype="0" conaffinity="0" />
+        <body name="finger3">
+          <joint name="joint3" type="hinge" axis="1 0 0" range="0 0.75" damping="0.025" armature="0.0005" />
+          <inertial pos="0 0 0.02" mass="0.22" diaginertia="0.0002 0.0002 0.0002" />
+          <geom name="horn_follower3" type="mesh" mesh="horn_follower" rgba="0.85 0.65 0.22 1" contype="0" conaffinity="0" />
+          <geom name="horn_main3" type="mesh" mesh="horn_main" rgba="0.85 0.65 0.22 1" contype="0" conaffinity="0" />
+          <geom name="long_u3" type="mesh" mesh="long_u" rgba="0.65 0.71 0.76 1" contype="0" conaffinity="0" />
+          <geom name="pad3" type="mesh" mesh="pad" rgba="0.12 0.12 0.12 1" contype="0" conaffinity="0" />
+          <geom name="fasteners3" type="mesh" mesh="fasteners" rgba="0.72 0.72 0.68 1" contype="0" conaffinity="0" />
+          <geom name="pad_collision3" type="box" pos="0 -0.0085 0.035" size="0.014 0.004 0.015" rgba="0 0 0 0" friction="2 0.02 0.002" solref="0.003 1" solimp="0.99 0.999 0.0001" mass="0" contype="1" conaffinity="1" />
+        </body>
+      </body>
+    </body>
+    <body name="object" pos="0 0 0.05">
+      <freejoint name="object_free" />
+      <geom name="object_collision" type="sphere" size="0.03" mass="0.05" rgba="0.92 0.36 0.15 1" friction="2 0.02 0.002" solref="0.003 1" solimp="0.99 0.999 0.0001" />
+    </body>
+  </worldbody>
+  <actuator>
+    <position name="lift" joint="lift" kp="5000" ctrlrange="0 0.06" forcerange="-150 150" forcelimited="true" />
+    <position name="servo1" joint="joint1" kp="2.0" ctrllimited="true" ctrlrange="0 0.75" forcelimited="true" forcerange="-1.0 1.0" />
+    <position name="servo2" joint="joint2" kp="2.0" ctrllimited="true" ctrlrange="0 0.75" forcelimited="true" forcerange="-1.0 1.0" />
+    <position name="servo3" joint="joint3" kp="2.0" ctrllimited="true" ctrlrange="0 0.75" forcelimited="true" forcerange="-1.0 1.0" />
+  </actuator>
+</mujoco>
