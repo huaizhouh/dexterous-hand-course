@@ -1,0 +1,338 @@
+<mujoco model="trial2_three_tendon_two_joint_hand">
+  <compiler angle="radian" meshdir="meshes" autolimits="true" />
+  <option timestep=".001" gravity="0 0 -9.81" integrator="implicitfast" iterations="100" cone="elliptic" />
+  <statistic center="0 0 0.025" extent=".35" />
+  <visual>
+    <global offwidth="1400" offheight="1100" />
+    <headlight ambient=".5 .5 .5" diffuse=".6 .6 .6" />
+  </visual>
+  <default>
+    <geom friction="1.2 .01 .001" solref=".004 1" solimp=".99 .999 .0001" />
+  </default>
+  <asset>
+    <texture type="skybox" builtin="gradient" rgb1=".18 .25 .33" rgb2=".78 .83 .88" width="512" height="3072" />
+    <mesh name="palm" file="palm.stl" scale=".001 .001 .001" />
+    <mesh name="root_clevis" file="root_clevis.stl" scale=".001 .001 .001" />
+    <mesh name="proximal" file="proximal.stl" scale=".001 .001 .001" />
+    <mesh name="distal" file="distal.stl" scale=".001 .001 .001" />
+    <mesh name="contact_pad" file="contact_pad.stl" scale=".001 .001 .001" />
+    <mesh name="winch_hub" file="winch_hub.stl" scale=".001 .001 .001" />
+    <mesh name="winch_drum" file="winch_drum.stl" scale=".001 .001 .001" />
+    <mesh name="motor_carrier" file="motor_carrier.stl" scale=".001 .001 .001" />
+    <mesh name="motor_body" file="motor_body.stl" scale=".001 .001 .001" />
+    <mesh name="motor_horn" file="motor_horn.stl" scale=".001 .001 .001" />
+    <mesh name="winch_retainer" file="winch_retainer.stl" scale=".001 .001 .001" />
+    <mesh name="hub_fasteners" file="hub_fasteners.stl" scale=".001 .001 .001" />
+    <mesh name="hinge_bolt" file="hinge_bolt.stl" scale=".001 .001 .001" />
+    <mesh name="hinge_nut" file="hinge_nut.stl" scale=".001 .001 .001" />
+    <mesh name="torsion_spring_envelope" file="torsion_spring_envelope.stl" scale=".001 .001 .001" />
+    <mesh name="liner" file="liner.stl" scale=".001 .001 .001" />
+    <mesh name="tendon_stop" file="tendon_stop.stl" scale=".001 .001 .001" />
+    <mesh name="hinge_spacers" file="hinge_spacers.stl" scale=".001 .001 .001" />
+    <mesh name="root_fasteners" file="root_fasteners.stl" scale=".001 .001 .001" />
+    <mesh name="carrier_fasteners" file="carrier_fasteners.stl" scale=".001 .001 .001" />
+    <mesh name="clamp_screws" file="clamp_screws.stl" scale=".001 .001 .001" />
+  </asset>
+  <worldbody>
+    <light pos=".1 -.2 .5" dir="0 0 -1" diffuse=".8 .8 .8" />
+    <geom name="test_pedestal" type="cylinder" pos="0 0 0" size=".018 .049" rgba=".45 .5 .56 1" />
+    <geom name="test_tray" type="cylinder" pos="0 0 .05" size=".042 .001" rgba=".45 .5 .56 1" />
+    <geom name="floor" type="plane" pos="0 0 -.075" size=".3 .3 .01" rgba=".2 .26 .32 1" />
+    <body name="test_fixture" gravcomp="1">
+      <joint name="fixture_lift" type="slide" axis="0 0 1" range="0 .045" damping="30" />
+      <inertial pos="0 0 0" mass="1" diaginertia=".01 .01 .01" />
+      <geom name="palm" type="mesh" mesh="palm" rgba=".16 .28 .39 1" contype="0" conaffinity="0" mass="0" />
+      <geom name="palm_contact_left" type="box" pos="-0.0575000000 0.0000000000 -0.0025000000" size="0.0325000000 0.0550000000 0.0025000000" rgba="0 0 0 0" mass="0" />
+      <geom name="palm_contact_right" type="box" pos="0.0575000000 0.0000000000 -0.0025000000" size="0.0325000000 0.0550000000 0.0025000000" rgba="0 0 0 0" mass="0" />
+      <geom name="palm_contact_back" type="box" pos="0.0000000000 -0.0575000000 -0.0025000000" size="0.0250000000 0.0325000000 0.0025000000" rgba="0 0 0 0" mass="0" />
+      <geom name="palm_contact_front" type="box" pos="0.0000000000 0.0575000000 -0.0025000000" size="0.0250000000 0.0325000000 0.0025000000" rgba="0 0 0 0" mass="0" />
+      <body name="A_base" pos="0.0000000000 0.0600000000 0.0150000000" euler="0 0 0.000000000000">
+        <geom name="A_root_fasteners" type="mesh" mesh="root_fasteners" rgba="0.68 0.73 0.78 1" contype="0" conaffinity="0" mass="0" />
+        <geom name="A_carrier_fasteners" type="mesh" mesh="carrier_fasteners" rgba="0.68 0.73 0.78 1" contype="0" conaffinity="0" mass="0" />
+        <geom name="A_clamp_screws" type="mesh" mesh="clamp_screws" rgba="0.68 0.73 0.78 1" contype="0" conaffinity="0" mass="0" />
+        <geom name="A_root" type="mesh" mesh="root_clevis" rgba=".19 .39 .53 1" contype="0" conaffinity="0" mass="0" />
+        <geom name="A_carrier" type="mesh" mesh="motor_carrier" rgba=".25 .32 .38 1" contype="0" conaffinity="0" mass="0" />
+        <geom name="A_motor" type="mesh" mesh="motor_body" rgba=".14 .16 .19 1" contype="0" conaffinity="0" mass="0" pos="0.0000000000 0.0000000000 -0.0480000000" />
+        <geom name="A_root_hinge_bolt" type="mesh" mesh="hinge_bolt" rgba=".6 .56 .42 1" contype="0" conaffinity="0" mass="0" />
+        <geom name="A_root_hinge_nut" type="mesh" mesh="hinge_nut" rgba=".6 .56 .42 1" contype="0" conaffinity="0" mass="0" />
+        <geom name="A_root_hinge_spacers" type="mesh" mesh="hinge_spacers" rgba=".6 .56 .42 1" contype="0" conaffinity="0" mass="0" />
+        <geom name="A_root_torsion_spring_envelope" type="mesh" mesh="torsion_spring_envelope" rgba=".6 .56 .42 1" contype="0" conaffinity="0" mass="0" />
+        <site name="A_fixed_0" pos="0.0350000000 -0.0080000000 -0.0480000000" size=".0007" rgba="0 0 0 0" />
+        <site name="A_fixed_1" pos="0.0350000000 -0.0080000000 -0.0260000000" size=".0007" rgba="0 0 0 0" />
+        <site name="A_fixed_2" pos="0.0348977775 -0.0080000000 -0.0252235429" size=".0007" rgba="0 0 0 0" />
+        <site name="A_fixed_3" pos="0.0345980762 -0.0080000000 -0.0245000000" size=".0007" rgba="0 0 0 0" />
+        <site name="A_fixed_4" pos="0.0341213203 -0.0080000000 -0.0238786797" size=".0007" rgba="0 0 0 0" />
+        <site name="A_fixed_5" pos="0.0335000000 -0.0080000000 -0.0234019238" size=".0007" rgba="0 0 0 0" />
+        <site name="A_fixed_6" pos="0.0327764571 -0.0080000000 -0.0231022225" size=".0007" rgba="0 0 0 0" />
+        <site name="A_fixed_7" pos="0.0320000000 -0.0080000000 -0.0230000000" size=".0007" rgba="0 0 0 0" />
+        <site name="A_fixed_8" pos="0.0030000000 -0.0080000000 -0.0230000000" size=".0007" rgba="0 0 0 0" />
+        <site name="A_fixed_9" pos="0.0022235429 -0.0080000000 -0.0228977775" size=".0007" rgba="0 0 0 0" />
+        <site name="A_fixed_10" pos="0.0015000000 -0.0080000000 -0.0225980762" size=".0007" rgba="0 0 0 0" />
+        <site name="A_fixed_11" pos="0.0008786797 -0.0080000000 -0.0221213203" size=".0007" rgba="0 0 0 0" />
+        <site name="A_fixed_12" pos="0.0004019238 -0.0080000000 -0.0215000000" size=".0007" rgba="0 0 0 0" />
+        <site name="A_fixed_13" pos="0.0001022225 -0.0080000000 -0.0207764571" size=".0007" rgba="0 0 0 0" />
+        <site name="A_fixed_14" pos="0.0000000000 -0.0080000000 -0.0200000000" size=".0007" rgba="0 0 0 0" />
+        <site name="A_fixed_15" pos="0.0000000000 -0.0080000000 -0.0060000000" size=".0007" rgba="0 0 0 0" />
+        <body name="A_winch" pos="0 0 -.048">
+          <joint name="A_reel" type="hinge" axis="1 0 0" range="0 2.8" damping=".001" armature=".000005" />
+          <inertial pos=".03 0 0" mass=".012" diaginertia=".000002 .000002 .000002" />
+          <geom name="A_motor_horn" type="mesh" mesh="motor_horn" rgba=".83 .58 .18 1" contype="0" conaffinity="0" mass="0" />
+          <geom name="A_winch_hub" type="mesh" mesh="winch_hub" rgba=".83 .58 .18 1" contype="0" conaffinity="0" mass="0" />
+          <geom name="A_winch_drum" type="mesh" mesh="winch_drum" rgba=".83 .58 .18 1" contype="0" conaffinity="0" mass="0" />
+          <geom name="A_winch_retainer" type="mesh" mesh="winch_retainer" rgba=".83 .58 .18 1" contype="0" conaffinity="0" mass="0" />
+          <geom name="A_hub_fasteners" type="mesh" mesh="hub_fasteners" rgba=".83 .58 .18 1" contype="0" conaffinity="0" mass="0" />
+        </body>
+        <body name="A_proximal">
+          <joint name="A_MCP" type="hinge" axis="1 0 0" range="0 1.05" stiffness=".06" springref="0" damping=".003" armature=".00001" />
+          <inertial pos="0 0 .023" mass=".04" diaginertia=".00002 .00002 .000006" />
+          <geom name="A_prox_mesh" type="mesh" mesh="proximal" rgba="0.68 0.73 0.78 1" contype="0" conaffinity="0" mass="0" />
+          <geom name="A_prox_contact" type="capsule" fromto="0 0 .008 0 0 .03" size=".005" rgba="0 0 0 0" mass="0" />
+          <site name="A_prox_guide0" pos="0.0000000000 -0.0080000000 0.0325000000" size=".0007" rgba="0 0 0 0" />
+          <site name="A_prox_guide1" pos="0.0000000000 -0.0080000000 0.0355000000" size=".0007" rgba="0 0 0 0" />
+          <geom name="A_PIP_hinge_bolt" type="mesh" mesh="hinge_bolt" rgba=".6 .56 .42 1" contype="0" conaffinity="0" mass="0" pos="0.0000000000 0.0000000000 0.0450000000" />
+          <geom name="A_PIP_hinge_nut" type="mesh" mesh="hinge_nut" rgba=".6 .56 .42 1" contype="0" conaffinity="0" mass="0" pos="0.0000000000 0.0000000000 0.0450000000" />
+          <geom name="A_PIP_hinge_spacers" type="mesh" mesh="hinge_spacers" rgba=".6 .56 .42 1" contype="0" conaffinity="0" mass="0" pos="0.0000000000 0.0000000000 0.0450000000" />
+          <geom name="A_PIP_torsion_spring_envelope" type="mesh" mesh="torsion_spring_envelope" rgba=".6 .56 .42 1" contype="0" conaffinity="0" mass="0" pos="0.0000000000 0.0000000000 0.0450000000" />
+          <body name="A_distal" pos="0 0 .045">
+            <joint name="A_PIP" type="hinge" axis="1 0 0" range="0 1.3" stiffness=".05" springref="0" damping=".003" armature=".000008" />
+            <inertial pos="0 0 .018" mass=".025" diaginertia=".000006 .000006 .000003" />
+            <geom name="A_dist_mesh" type="mesh" mesh="distal" rgba="0.68 0.73 0.78 1" contype="0" conaffinity="0" mass="0" />
+            <geom name="A_pad_mesh" type="mesh" mesh="contact_pad" rgba=".13 .18 .21 1" contype="0" conaffinity="0" mass="0" />
+            <geom name="A_liner" type="mesh" mesh="liner" rgba=".9 .9 .85 1" contype="0" conaffinity="0" mass="0" />
+            <geom name="A_stop" type="mesh" mesh="tendon_stop" rgba=".84 .61 .2 1" contype="0" conaffinity="0" mass="0" />
+            <geom name="A_pad_contact" type="capsule" fromto="0 -.0085 .014 0 -.0085 .025" size=".004" rgba="0 0 0 0" mass="0" />
+            <geom name="A_dist_contact" type="capsule" fromto="0 0 .008 0 0 .029" size=".004" rgba="0 0 0 0" mass="0" />
+            <site name="A_dist_guide0" pos="0.0000000000 -0.0080000000 0.0065000000" size=".0007" rgba="0 0 0 0" />
+            <site name="A_dist_guide1" pos="0.0000000000 -0.0080000000 0.0095000000" size=".0007" rgba="0 0 0 0" />
+            <site name="A_dist_guide2" pos="0.0000000000 -0.0080000000 0.0305000000" size=".0007" rgba="0 0 0 0" />
+            <site name="A_dist_guide3" pos="0.0000000000 -0.0080000000 0.0340000000" size=".0007" rgba="0 0 0 0" />
+          </body>
+        </body>
+      </body>
+      <body name="B_base" pos="-0.0519615242 -0.0300000000 0.0150000000" euler="0 0 2.094395102393">
+        <geom name="B_root_fasteners" type="mesh" mesh="root_fasteners" rgba="0.68 0.73 0.78 1" contype="0" conaffinity="0" mass="0" />
+        <geom name="B_carrier_fasteners" type="mesh" mesh="carrier_fasteners" rgba="0.68 0.73 0.78 1" contype="0" conaffinity="0" mass="0" />
+        <geom name="B_clamp_screws" type="mesh" mesh="clamp_screws" rgba="0.68 0.73 0.78 1" contype="0" conaffinity="0" mass="0" />
+        <geom name="B_root" type="mesh" mesh="root_clevis" rgba=".19 .39 .53 1" contype="0" conaffinity="0" mass="0" />
+        <geom name="B_carrier" type="mesh" mesh="motor_carrier" rgba=".25 .32 .38 1" contype="0" conaffinity="0" mass="0" />
+        <geom name="B_motor" type="mesh" mesh="motor_body" rgba=".14 .16 .19 1" contype="0" conaffinity="0" mass="0" pos="0.0000000000 0.0000000000 -0.0480000000" />
+        <geom name="B_root_hinge_bolt" type="mesh" mesh="hinge_bolt" rgba=".6 .56 .42 1" contype="0" conaffinity="0" mass="0" />
+        <geom name="B_root_hinge_nut" type="mesh" mesh="hinge_nut" rgba=".6 .56 .42 1" contype="0" conaffinity="0" mass="0" />
+        <geom name="B_root_hinge_spacers" type="mesh" mesh="hinge_spacers" rgba=".6 .56 .42 1" contype="0" conaffinity="0" mass="0" />
+        <geom name="B_root_torsion_spring_envelope" type="mesh" mesh="torsion_spring_envelope" rgba=".6 .56 .42 1" contype="0" conaffinity="0" mass="0" />
+        <site name="B_fixed_0" pos="0.0350000000 -0.0080000000 -0.0480000000" size=".0007" rgba="0 0 0 0" />
+        <site name="B_fixed_1" pos="0.0350000000 -0.0080000000 -0.0260000000" size=".0007" rgba="0 0 0 0" />
+        <site name="B_fixed_2" pos="0.0348977775 -0.0080000000 -0.0252235429" size=".0007" rgba="0 0 0 0" />
+        <site name="B_fixed_3" pos="0.0345980762 -0.0080000000 -0.0245000000" size=".0007" rgba="0 0 0 0" />
+        <site name="B_fixed_4" pos="0.0341213203 -0.0080000000 -0.0238786797" size=".0007" rgba="0 0 0 0" />
+        <site name="B_fixed_5" pos="0.0335000000 -0.0080000000 -0.0234019238" size=".0007" rgba="0 0 0 0" />
+        <site name="B_fixed_6" pos="0.0327764571 -0.0080000000 -0.0231022225" size=".0007" rgba="0 0 0 0" />
+        <site name="B_fixed_7" pos="0.0320000000 -0.0080000000 -0.0230000000" size=".0007" rgba="0 0 0 0" />
+        <site name="B_fixed_8" pos="0.0030000000 -0.0080000000 -0.0230000000" size=".0007" rgba="0 0 0 0" />
+        <site name="B_fixed_9" pos="0.0022235429 -0.0080000000 -0.0228977775" size=".0007" rgba="0 0 0 0" />
+        <site name="B_fixed_10" pos="0.0015000000 -0.0080000000 -0.0225980762" size=".0007" rgba="0 0 0 0" />
+        <site name="B_fixed_11" pos="0.0008786797 -0.0080000000 -0.0221213203" size=".0007" rgba="0 0 0 0" />
+        <site name="B_fixed_12" pos="0.0004019238 -0.0080000000 -0.0215000000" size=".0007" rgba="0 0 0 0" />
+        <site name="B_fixed_13" pos="0.0001022225 -0.0080000000 -0.0207764571" size=".0007" rgba="0 0 0 0" />
+        <site name="B_fixed_14" pos="0.0000000000 -0.0080000000 -0.0200000000" size=".0007" rgba="0 0 0 0" />
+        <site name="B_fixed_15" pos="0.0000000000 -0.0080000000 -0.0060000000" size=".0007" rgba="0 0 0 0" />
+        <body name="B_winch" pos="0 0 -.048">
+          <joint name="B_reel" type="hinge" axis="1 0 0" range="0 2.8" damping=".001" armature=".000005" />
+          <inertial pos=".03 0 0" mass=".012" diaginertia=".000002 .000002 .000002" />
+          <geom name="B_motor_horn" type="mesh" mesh="motor_horn" rgba=".83 .58 .18 1" contype="0" conaffinity="0" mass="0" />
+          <geom name="B_winch_hub" type="mesh" mesh="winch_hub" rgba=".83 .58 .18 1" contype="0" conaffinity="0" mass="0" />
+          <geom name="B_winch_drum" type="mesh" mesh="winch_drum" rgba=".83 .58 .18 1" contype="0" conaffinity="0" mass="0" />
+          <geom name="B_winch_retainer" type="mesh" mesh="winch_retainer" rgba=".83 .58 .18 1" contype="0" conaffinity="0" mass="0" />
+          <geom name="B_hub_fasteners" type="mesh" mesh="hub_fasteners" rgba=".83 .58 .18 1" contype="0" conaffinity="0" mass="0" />
+        </body>
+        <body name="B_proximal">
+          <joint name="B_MCP" type="hinge" axis="1 0 0" range="0 1.05" stiffness=".06" springref="0" damping=".003" armature=".00001" />
+          <inertial pos="0 0 .023" mass=".04" diaginertia=".00002 .00002 .000006" />
+          <geom name="B_prox_mesh" type="mesh" mesh="proximal" rgba="0.68 0.73 0.78 1" contype="0" conaffinity="0" mass="0" />
+          <geom name="B_prox_contact" type="capsule" fromto="0 0 .008 0 0 .03" size=".005" rgba="0 0 0 0" mass="0" />
+          <site name="B_prox_guide0" pos="0.0000000000 -0.0080000000 0.0325000000" size=".0007" rgba="0 0 0 0" />
+          <site name="B_prox_guide1" pos="0.0000000000 -0.0080000000 0.0355000000" size=".0007" rgba="0 0 0 0" />
+          <geom name="B_PIP_hinge_bolt" type="mesh" mesh="hinge_bolt" rgba=".6 .56 .42 1" contype="0" conaffinity="0" mass="0" pos="0.0000000000 0.0000000000 0.0450000000" />
+          <geom name="B_PIP_hinge_nut" type="mesh" mesh="hinge_nut" rgba=".6 .56 .42 1" contype="0" conaffinity="0" mass="0" pos="0.0000000000 0.0000000000 0.0450000000" />
+          <geom name="B_PIP_hinge_spacers" type="mesh" mesh="hinge_spacers" rgba=".6 .56 .42 1" contype="0" conaffinity="0" mass="0" pos="0.0000000000 0.0000000000 0.0450000000" />
+          <geom name="B_PIP_torsion_spring_envelope" type="mesh" mesh="torsion_spring_envelope" rgba=".6 .56 .42 1" contype="0" conaffinity="0" mass="0" pos="0.0000000000 0.0000000000 0.0450000000" />
+          <body name="B_distal" pos="0 0 .045">
+            <joint name="B_PIP" type="hinge" axis="1 0 0" range="0 1.3" stiffness=".05" springref="0" damping=".003" armature=".000008" />
+            <inertial pos="0 0 .018" mass=".025" diaginertia=".000006 .000006 .000003" />
+            <geom name="B_dist_mesh" type="mesh" mesh="distal" rgba="0.68 0.73 0.78 1" contype="0" conaffinity="0" mass="0" />
+            <geom name="B_pad_mesh" type="mesh" mesh="contact_pad" rgba=".13 .18 .21 1" contype="0" conaffinity="0" mass="0" />
+            <geom name="B_liner" type="mesh" mesh="liner" rgba=".9 .9 .85 1" contype="0" conaffinity="0" mass="0" />
+            <geom name="B_stop" type="mesh" mesh="tendon_stop" rgba=".84 .61 .2 1" contype="0" conaffinity="0" mass="0" />
+            <geom name="B_pad_contact" type="capsule" fromto="0 -.0085 .014 0 -.0085 .025" size=".004" rgba="0 0 0 0" mass="0" />
+            <geom name="B_dist_contact" type="capsule" fromto="0 0 .008 0 0 .029" size=".004" rgba="0 0 0 0" mass="0" />
+            <site name="B_dist_guide0" pos="0.0000000000 -0.0080000000 0.0065000000" size=".0007" rgba="0 0 0 0" />
+            <site name="B_dist_guide1" pos="0.0000000000 -0.0080000000 0.0095000000" size=".0007" rgba="0 0 0 0" />
+            <site name="B_dist_guide2" pos="0.0000000000 -0.0080000000 0.0305000000" size=".0007" rgba="0 0 0 0" />
+            <site name="B_dist_guide3" pos="0.0000000000 -0.0080000000 0.0340000000" size=".0007" rgba="0 0 0 0" />
+          </body>
+        </body>
+      </body>
+      <body name="C_base" pos="0.0519615242 -0.0300000000 0.0150000000" euler="0 0 4.188790204786">
+        <geom name="C_root_fasteners" type="mesh" mesh="root_fasteners" rgba="0.68 0.73 0.78 1" contype="0" conaffinity="0" mass="0" />
+        <geom name="C_carrier_fasteners" type="mesh" mesh="carrier_fasteners" rgba="0.68 0.73 0.78 1" contype="0" conaffinity="0" mass="0" />
+        <geom name="C_clamp_screws" type="mesh" mesh="clamp_screws" rgba="0.68 0.73 0.78 1" contype="0" conaffinity="0" mass="0" />
+        <geom name="C_root" type="mesh" mesh="root_clevis" rgba=".19 .39 .53 1" contype="0" conaffinity="0" mass="0" />
+        <geom name="C_carrier" type="mesh" mesh="motor_carrier" rgba=".25 .32 .38 1" contype="0" conaffinity="0" mass="0" />
+        <geom name="C_motor" type="mesh" mesh="motor_body" rgba=".14 .16 .19 1" contype="0" conaffinity="0" mass="0" pos="0.0000000000 0.0000000000 -0.0480000000" />
+        <geom name="C_root_hinge_bolt" type="mesh" mesh="hinge_bolt" rgba=".6 .56 .42 1" contype="0" conaffinity="0" mass="0" />
+        <geom name="C_root_hinge_nut" type="mesh" mesh="hinge_nut" rgba=".6 .56 .42 1" contype="0" conaffinity="0" mass="0" />
+        <geom name="C_root_hinge_spacers" type="mesh" mesh="hinge_spacers" rgba=".6 .56 .42 1" contype="0" conaffinity="0" mass="0" />
+        <geom name="C_root_torsion_spring_envelope" type="mesh" mesh="torsion_spring_envelope" rgba=".6 .56 .42 1" contype="0" conaffinity="0" mass="0" />
+        <site name="C_fixed_0" pos="0.0350000000 -0.0080000000 -0.0480000000" size=".0007" rgba="0 0 0 0" />
+        <site name="C_fixed_1" pos="0.0350000000 -0.0080000000 -0.0260000000" size=".0007" rgba="0 0 0 0" />
+        <site name="C_fixed_2" pos="0.0348977775 -0.0080000000 -0.0252235429" size=".0007" rgba="0 0 0 0" />
+        <site name="C_fixed_3" pos="0.0345980762 -0.0080000000 -0.0245000000" size=".0007" rgba="0 0 0 0" />
+        <site name="C_fixed_4" pos="0.0341213203 -0.0080000000 -0.0238786797" size=".0007" rgba="0 0 0 0" />
+        <site name="C_fixed_5" pos="0.0335000000 -0.0080000000 -0.0234019238" size=".0007" rgba="0 0 0 0" />
+        <site name="C_fixed_6" pos="0.0327764571 -0.0080000000 -0.0231022225" size=".0007" rgba="0 0 0 0" />
+        <site name="C_fixed_7" pos="0.0320000000 -0.0080000000 -0.0230000000" size=".0007" rgba="0 0 0 0" />
+        <site name="C_fixed_8" pos="0.0030000000 -0.0080000000 -0.0230000000" size=".0007" rgba="0 0 0 0" />
+        <site name="C_fixed_9" pos="0.0022235429 -0.0080000000 -0.0228977775" size=".0007" rgba="0 0 0 0" />
+        <site name="C_fixed_10" pos="0.0015000000 -0.0080000000 -0.0225980762" size=".0007" rgba="0 0 0 0" />
+        <site name="C_fixed_11" pos="0.0008786797 -0.0080000000 -0.0221213203" size=".0007" rgba="0 0 0 0" />
+        <site name="C_fixed_12" pos="0.0004019238 -0.0080000000 -0.0215000000" size=".0007" rgba="0 0 0 0" />
+        <site name="C_fixed_13" pos="0.0001022225 -0.0080000000 -0.0207764571" size=".0007" rgba="0 0 0 0" />
+        <site name="C_fixed_14" pos="0.0000000000 -0.0080000000 -0.0200000000" size=".0007" rgba="0 0 0 0" />
+        <site name="C_fixed_15" pos="0.0000000000 -0.0080000000 -0.0060000000" size=".0007" rgba="0 0 0 0" />
+        <body name="C_winch" pos="0 0 -.048">
+          <joint name="C_reel" type="hinge" axis="1 0 0" range="0 2.8" damping=".001" armature=".000005" />
+          <inertial pos=".03 0 0" mass=".012" diaginertia=".000002 .000002 .000002" />
+          <geom name="C_motor_horn" type="mesh" mesh="motor_horn" rgba=".83 .58 .18 1" contype="0" conaffinity="0" mass="0" />
+          <geom name="C_winch_hub" type="mesh" mesh="winch_hub" rgba=".83 .58 .18 1" contype="0" conaffinity="0" mass="0" />
+          <geom name="C_winch_drum" type="mesh" mesh="winch_drum" rgba=".83 .58 .18 1" contype="0" conaffinity="0" mass="0" />
+          <geom name="C_winch_retainer" type="mesh" mesh="winch_retainer" rgba=".83 .58 .18 1" contype="0" conaffinity="0" mass="0" />
+          <geom name="C_hub_fasteners" type="mesh" mesh="hub_fasteners" rgba=".83 .58 .18 1" contype="0" conaffinity="0" mass="0" />
+        </body>
+        <body name="C_proximal">
+          <joint name="C_MCP" type="hinge" axis="1 0 0" range="0 1.05" stiffness=".06" springref="0" damping=".003" armature=".00001" />
+          <inertial pos="0 0 .023" mass=".04" diaginertia=".00002 .00002 .000006" />
+          <geom name="C_prox_mesh" type="mesh" mesh="proximal" rgba="0.68 0.73 0.78 1" contype="0" conaffinity="0" mass="0" />
+          <geom name="C_prox_contact" type="capsule" fromto="0 0 .008 0 0 .03" size=".005" rgba="0 0 0 0" mass="0" />
+          <site name="C_prox_guide0" pos="0.0000000000 -0.0080000000 0.0325000000" size=".0007" rgba="0 0 0 0" />
+          <site name="C_prox_guide1" pos="0.0000000000 -0.0080000000 0.0355000000" size=".0007" rgba="0 0 0 0" />
+          <geom name="C_PIP_hinge_bolt" type="mesh" mesh="hinge_bolt" rgba=".6 .56 .42 1" contype="0" conaffinity="0" mass="0" pos="0.0000000000 0.0000000000 0.0450000000" />
+          <geom name="C_PIP_hinge_nut" type="mesh" mesh="hinge_nut" rgba=".6 .56 .42 1" contype="0" conaffinity="0" mass="0" pos="0.0000000000 0.0000000000 0.0450000000" />
+          <geom name="C_PIP_hinge_spacers" type="mesh" mesh="hinge_spacers" rgba=".6 .56 .42 1" contype="0" conaffinity="0" mass="0" pos="0.0000000000 0.0000000000 0.0450000000" />
+          <geom name="C_PIP_torsion_spring_envelope" type="mesh" mesh="torsion_spring_envelope" rgba=".6 .56 .42 1" contype="0" conaffinity="0" mass="0" pos="0.0000000000 0.0000000000 0.0450000000" />
+          <body name="C_distal" pos="0 0 .045">
+            <joint name="C_PIP" type="hinge" axis="1 0 0" range="0 1.3" stiffness=".05" springref="0" damping=".003" armature=".000008" />
+            <inertial pos="0 0 .018" mass=".025" diaginertia=".000006 .000006 .000003" />
+            <geom name="C_dist_mesh" type="mesh" mesh="distal" rgba="0.68 0.73 0.78 1" contype="0" conaffinity="0" mass="0" />
+            <geom name="C_pad_mesh" type="mesh" mesh="contact_pad" rgba=".13 .18 .21 1" contype="0" conaffinity="0" mass="0" />
+            <geom name="C_liner" type="mesh" mesh="liner" rgba=".9 .9 .85 1" contype="0" conaffinity="0" mass="0" />
+            <geom name="C_stop" type="mesh" mesh="tendon_stop" rgba=".84 .61 .2 1" contype="0" conaffinity="0" mass="0" />
+            <geom name="C_pad_contact" type="capsule" fromto="0 -.0085 .014 0 -.0085 .025" size=".004" rgba="0 0 0 0" mass="0" />
+            <geom name="C_dist_contact" type="capsule" fromto="0 0 .008 0 0 .029" size=".004" rgba="0 0 0 0" mass="0" />
+            <site name="C_dist_guide0" pos="0.0000000000 -0.0080000000 0.0065000000" size=".0007" rgba="0 0 0 0" />
+            <site name="C_dist_guide1" pos="0.0000000000 -0.0080000000 0.0095000000" size=".0007" rgba="0 0 0 0" />
+            <site name="C_dist_guide2" pos="0.0000000000 -0.0080000000 0.0305000000" size=".0007" rgba="0 0 0 0" />
+            <site name="C_dist_guide3" pos="0.0000000000 -0.0080000000 0.0340000000" size=".0007" rgba="0 0 0 0" />
+          </body>
+        </body>
+      </body>
+    </body>
+    <body name="test_object" pos="0 0 .073">
+      <freejoint name="object_free" />
+      <geom name="test_ball" type="sphere" size=".022" mass=".03" rgba=".92 .39 .13 1" />
+    </body>
+  </worldbody>
+  <tendon>
+    <spatial name="A_flexor" width=".0004" rgba=".94 .2 .09 1">
+      <site site="A_fixed_0" />
+      <site site="A_fixed_1" />
+      <site site="A_fixed_2" />
+      <site site="A_fixed_3" />
+      <site site="A_fixed_4" />
+      <site site="A_fixed_5" />
+      <site site="A_fixed_6" />
+      <site site="A_fixed_7" />
+      <site site="A_fixed_8" />
+      <site site="A_fixed_9" />
+      <site site="A_fixed_10" />
+      <site site="A_fixed_11" />
+      <site site="A_fixed_12" />
+      <site site="A_fixed_13" />
+      <site site="A_fixed_14" />
+      <site site="A_fixed_15" />
+      <site site="A_prox_guide0" />
+      <site site="A_prox_guide1" />
+      <site site="A_dist_guide0" />
+      <site site="A_dist_guide1" />
+      <site site="A_dist_guide2" />
+      <site site="A_dist_guide3" />
+    </spatial>
+    <fixed name="A_unrolled">
+      <joint joint="A_reel" coef="0.0078" />
+    </fixed>
+    <spatial name="B_flexor" width=".0004" rgba=".94 .2 .09 1">
+      <site site="B_fixed_0" />
+      <site site="B_fixed_1" />
+      <site site="B_fixed_2" />
+      <site site="B_fixed_3" />
+      <site site="B_fixed_4" />
+      <site site="B_fixed_5" />
+      <site site="B_fixed_6" />
+      <site site="B_fixed_7" />
+      <site site="B_fixed_8" />
+      <site site="B_fixed_9" />
+      <site site="B_fixed_10" />
+      <site site="B_fixed_11" />
+      <site site="B_fixed_12" />
+      <site site="B_fixed_13" />
+      <site site="B_fixed_14" />
+      <site site="B_fixed_15" />
+      <site site="B_prox_guide0" />
+      <site site="B_prox_guide1" />
+      <site site="B_dist_guide0" />
+      <site site="B_dist_guide1" />
+      <site site="B_dist_guide2" />
+      <site site="B_dist_guide3" />
+    </spatial>
+    <fixed name="B_unrolled">
+      <joint joint="B_reel" coef="0.0078" />
+    </fixed>
+    <spatial name="C_flexor" width=".0004" rgba=".94 .2 .09 1">
+      <site site="C_fixed_0" />
+      <site site="C_fixed_1" />
+      <site site="C_fixed_2" />
+      <site site="C_fixed_3" />
+      <site site="C_fixed_4" />
+      <site site="C_fixed_5" />
+      <site site="C_fixed_6" />
+      <site site="C_fixed_7" />
+      <site site="C_fixed_8" />
+      <site site="C_fixed_9" />
+      <site site="C_fixed_10" />
+      <site site="C_fixed_11" />
+      <site site="C_fixed_12" />
+      <site site="C_fixed_13" />
+      <site site="C_fixed_14" />
+      <site site="C_fixed_15" />
+      <site site="C_prox_guide0" />
+      <site site="C_prox_guide1" />
+      <site site="C_dist_guide0" />
+      <site site="C_dist_guide1" />
+      <site site="C_dist_guide2" />
+      <site site="C_dist_guide3" />
+    </spatial>
+    <fixed name="C_unrolled">
+      <joint joint="C_reel" coef="0.0078" />
+    </fixed>
+  </tendon>
+  <equality>
+    <tendon name="A_taut_cable" tendon1="A_flexor" tendon2="A_unrolled" polycoef="0 -1 0 0 0" solref=".003 1" solimp=".99 .999 .0001" />
+    <tendon name="B_taut_cable" tendon1="B_flexor" tendon2="B_unrolled" polycoef="0 -1 0 0 0" solref=".003 1" solimp=".99 .999 .0001" />
+    <tendon name="C_taut_cable" tendon1="C_flexor" tendon2="C_unrolled" polycoef="0 -1 0 0 0" solref=".003 1" solimp=".99 .999 .0001" />
+  </equality>
+  <actuator>
+    <position name="fixture_lift" joint="fixture_lift" kp="4000" kv="40" ctrlrange="0 .045" forcerange="-100 100" />
+    <position name="A_reel_motor" joint="A_reel" kp=".12" kv=".009" ctrlrange="0 2.6" forcerange="-.075 .075" />
+    <position name="B_reel_motor" joint="B_reel" kp=".12" kv=".009" ctrlrange="0 2.6" forcerange="-.075 .075" />
+    <position name="C_reel_motor" joint="C_reel" kp=".12" kv=".009" ctrlrange="0 2.6" forcerange="-.075 .075" />
+  </actuator>
+</mujoco>

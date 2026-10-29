@@ -1,0 +1,236 @@
+[
+  {
+    "q_deg": [
+      0,
+      0
+    ],
+    "unexpected": [],
+    "declared_fits": [
+      {
+        "a": "A_tendon_stop",
+        "b": "A_tendon",
+        "volume_mm3": 0.6135598444078095
+      },
+      {
+        "a": "A_motor_body",
+        "b": "A_motor_horn",
+        "volume_mm3": 28.172009321761198
+      },
+      {
+        "a": "B_tendon_stop",
+        "b": "B_tendon",
+        "volume_mm3": 0.6135598444077593
+      },
+      {
+        "a": "B_motor_body",
+        "b": "B_motor_horn",
+        "volume_mm3": 28.172009321753325
+      },
+      {
+        "a": "C_tendon_stop",
+        "b": "C_tendon",
+        "volume_mm3": 0.6135598444063969
+      },
+      {
+        "a": "C_motor_body",
+        "b": "C_motor_horn",
+        "volume_mm3": 28.172009321757145
+      }
+    ]
+  },
+  {
+    "q_deg": [
+      10,
+      15
+    ],
+    "unexpected": [],
+    "declared_fits": [
+      {
+        "a": "A_tendon_stop",
+        "b": "A_tendon",
+        "volume_mm3": 0.6135598443132013
+      },
+      {
+        "a": "A_motor_body",
+        "b": "A_motor_horn",
+        "volume_mm3": 28.172034258962196
+      },
+      {
+        "a": "B_tendon_stop",
+        "b": "B_tendon",
+        "volume_mm3": 0.6135598471770702
+      },
+      {
+        "a": "B_motor_body",
+        "b": "B_motor_horn",
+        "volume_mm3": 28.17203425894882
+      },
+      {
+        "a": "C_tendon_stop",
+        "b": "C_tendon",
+        "volume_mm3": 0.6135598318143941
+      },
+      {
+        "a": "C_motor_body",
+        "b": "C_motor_horn",
+        "volume_mm3": 28.17203425895404
+      }
+    ]
+  },
+  {
+    "q_deg": [
+      15,
+      35
+    ],
+    "unexpected": [],
+    "declared_fits": [
+      {
+        "a": "A_tendon_stop",
+        "b": "A_tendon",
+        "volume_mm3": 0.613559832116195
+      },
+      {
+        "a": "A_motor_body",
+        "b": "A_motor_horn",
+        "volume_mm3": 28.17187743570004
+      },
+      {
+        "a": "B_tendon_stop",
+        "b": "B_tendon",
+        "volume_mm3": 0.6135598414248989
+      },
+      {
+        "a": "B_motor_body",
+        "b": "B_motor_horn",
+        "volume_mm3": 28.171877435698736
+      },
+      {
+        "a": "C_tendon_stop",
+        "b": "C_tendon",
+        "volume_mm3": 0.6135598417016381
+      },
+      {
+        "a": "C_motor_body",
+        "b": "C_motor_horn",
+        "volume_mm3": 28.17187743569982
+      }
+    ]
+  },
+  {
+    "q_deg": [
+      9,
+      60
+    ],
+    "unexpected": [],
+    "declared_fits": [
+      {
+        "a": "A_tendon_stop",
+        "b": "A_tendon",
+        "volume_mm3": 0.6135598515860079
+      },
+      {
+        "a": "A_motor_body",
+        "b": "A_motor_horn",
+        "volume_mm3": 28.17207281109032
+      },
+      {
+        "a": "B_tendon_stop",
+        "b": "B_tendon",
+        "volume_mm3": 0.613559852319906
+      },
+      {
+        "a": "B_motor_body",
+        "b": "B_motor_horn",
+        "volume_mm3": 28.17207281109179
+      },
+      {
+        "a": "C_tendon_stop",
+        "b": "C_tendon",
+        "volume_mm3": 0.613559841812447
+      },
+      {
+        "a": "C_motor_body",
+        "b": "C_motor_horn",
+        "volume_mm3": 28.172072811091308
+      }
+    ]
+  },
+  {
+    "q_deg": [
+      20,
+      45
+    ],
+    "unexpected": [],
+    "declared_fits": [
+      {
+        "a": "A_tendon_stop",
+        "b": "A_tendon",
+        "volume_mm3": 0.6135598406607075
+      },
+      {
+        "a": "A_motor_body",
+        "b": "A_motor_horn",
+        "volume_mm3": 28.17316994166818
+      },
+      {
+        "a": "B_tendon_stop",
+        "b": "B_tendon",
+        "volume_mm3": 0.6135598387868411
+      },
+      {
+        "a": "B_motor_body",
+        "b": "B_motor_horn",
+        "volume_mm3": 28.173169941651388
+      },
+      {
+        "a": "C_tendon_stop",
+        "b": "C_tendon",
+        "volume_mm3": 0.6135598625874541
+      },
+      {
+        "a": "C_motor_body",
+        "b": "C_motor_horn",
+        "volume_mm3": 28.173169941670647
+      }
+    ]
+  },
+  {
+    "q_deg": [
+      25,
+      30
+    ],
+    "unexpected": [],
+    "declared_fits": [
+      {
+        "a": "A_tendon_stop",
+        "b": "A_tendon",
+        "volume_mm3": 0.6135598410008152
+      },
+      {
+        "a": "A_motor_body",
+        "b": "A_motor_horn",
+        "volume_mm3": 28.172885087668995
+      },
+      {
+        "a": "B_tendon_stop",
+        "b": "B_tendon",
+        "volume_mm3": 0.6135598424444599
+      },
+      {
+        "a": "B_motor_body",
+        "b": "B_motor_horn",
+        "volume_mm3": 28.172885087661683
+      },
+      {
+        "a": "C_tendon_stop",
+        "b": "C_tendon",
+        "volume_mm3": 0.6135598465974469
+      },
+      {
+        "a": "C_motor_body",
+        "b": "C_motor_horn",
+        "volume_mm3": 28.172885087656542
+      }
+    ]
+  }
+]
