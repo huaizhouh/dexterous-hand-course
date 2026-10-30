@@ -1,0 +1,143 @@
+{
+  "OPEN": {
+    "q_deg": [
+      0.0,
+      0.0
+    ],
+    "candidate_pairs_tested": 49,
+    "threshold_mm3": 0.03,
+    "interferences": []
+  },
+  "ROOT_FIRST_REFERENCE": {
+    "q_deg": [
+      20.0,
+      5.0
+    ],
+    "candidate_pairs_tested": 53,
+    "threshold_mm3": 0.03,
+    "interferences": []
+  },
+  "WRAP_REFERENCE": {
+    "q_deg": [
+      15.0,
+      25.0
+    ],
+    "candidate_pairs_tested": 53,
+    "threshold_mm3": 0.03,
+    "interferences": []
+  },
+  "local_joint_grid": [],
+  "tendon_geometry": {
+    "0.0,0.0": {
+      "length_mm": 191.83313557495526,
+      "takeup_mm": 0.0,
+      "moment_arms_mm": [
+        9.405506562936974,
+        7.50047598916982
+      ]
+    },
+    "20.0,5.0": {
+      "length_mm": 187.5842018257809,
+      "takeup_mm": 4.24893374917437,
+      "moment_arms_mm": [
+        11.019718481392452,
+        7.968982049350461
+      ]
+    },
+    "15.0,25.0": {
+      "length_mm": 185.44177603905294,
+      "takeup_mm": 6.391359535902325,
+      "moment_arms_mm": [
+        10.64605285189194,
+        9.677539318942127
+      ]
+    },
+    "35,70": {
+      "length_mm": 172.7276266581871,
+      "takeup_mm": 19.105508916768173,
+      "moment_arms_mm": [
+        12.010386019319416,
+        12.262722856567521
+      ]
+    }
+  },
+  "intermediate_poses": [
+    {
+      "q_deg": [
+        5.0,
+        1.25
+      ],
+      "candidate_pairs_tested": 51,
+      "threshold_mm3": 0.03,
+      "interferences": []
+    },
+    {
+      "q_deg": [
+        10.0,
+        2.5
+      ],
+      "candidate_pairs_tested": 51,
+      "threshold_mm3": 0.03,
+      "interferences": []
+    },
+    {
+      "q_deg": [
+        15.0,
+        3.75
+      ],
+      "candidate_pairs_tested": 53,
+      "threshold_mm3": 0.03,
+      "interferences": []
+    },
+    {
+      "q_deg": [
+        3.75,
+        6.25
+      ],
+      "candidate_pairs_tested": 51,
+      "threshold_mm3": 0.03,
+      "interferences": []
+    },
+    {
+      "q_deg": [
+        7.5,
+        12.5
+      ],
+      "candidate_pairs_tested": 53,
+      "threshold_mm3": 0.03,
+      "interferences": []
+    },
+    {
+      "q_deg": [
+        11.25,
+        18.75
+      ],
+      "candidate_pairs_tested": 53,
+      "threshold_mm3": 0.03,
+      "interferences": []
+    }
+  ],
+  "step_reimport": [
+    {
+      "path": "00_OPEN_IN_SOLIDWORKS.step",
+      "solids": 248,
+      "valid_solids": true
+    },
+    {
+      "path": "cad/WRAP_REFERENCE_ASSEMBLY.step",
+      "solids": 248,
+      "valid_solids": true
+    },
+    {
+      "path": "cad/ROOT_FIRST_REFERENCE_ASSEMBLY.step",
+      "solids": 249,
+      "valid_solids": true
+    },
+    {
+      "path": "cad/OPEN_ASSEMBLY.step",
+      "solids": 248,
+      "valid_solids": true
+    }
+  ],
+  "limits": "Static and sampled B-rep checks only; no SolidWorks runtime, load, friction or real object verification."
+}

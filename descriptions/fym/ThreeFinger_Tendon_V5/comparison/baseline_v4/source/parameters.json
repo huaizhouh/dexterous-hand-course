@@ -1,0 +1,23 @@
+{
+  "units": "mm",
+  "root_radius": 65.0,
+  "root_height": 24.0,
+  "proximal_axis_distance": 62.0,
+  "distal_axis_to_tip": 48.0,
+  "palm_side": 210.0,
+  "palm_thickness": 6.0,
+  "base_bottom": -68.0,
+  "base_thickness": 6.0,
+  "joint_hole_diameter": 3.3,
+  "joint_pin_diameter": 3.0,
+  "hinge_side_clearance": 0.3,
+  "tendon_diameter": 0.8,
+  "tendon_bore_diameter": 2.4,
+  "spool_cable_center_radius": 10.9,
+  "motor_axis_z": -32.0,
+  "poses": {
+    "OPEN": [0.0, 0.0],
+    "GRASP_60mm_REFERENCE": [8.0, 25.0],
+    "PINCH_10mm_REFERENCE": [12.0, 49.0]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "teacher_dual_axis_servo_original.SLDPRT": {
+    "sha256": "44825012b88643635a3e58f922cef3335103908ae8c985b7c7fd17404b69a6b9",
+    "size_bytes": 1420707
+  },
+  "teacher_dual_axis_servo_original.stp": {
+    "sha256": "017078d89b5f7c8b2b7bcc01605c3a6b4c02b40a429ab68bbe4b59d16ae32cca",
+    "size_bytes": 2064954
+  },
+  "teacher_long_U_original.SLDPRT": {
+    "sha256": "b8e49e76c3d28a703f826991c058e58b4e08b392929626da78d2fb2f4458b04d",
+    "size_bytes": 157314
+  },
+  "teacher_short_U_original.SLDPRT": {
+    "sha256": "abc39fc385601614c1ca9d4139011687617ddfa7982564e252e6770b0847aca1",
+    "size_bytes": 138298
+  }
+}

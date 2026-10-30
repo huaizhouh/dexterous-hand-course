@@ -1,0 +1,19 @@
+{
+  "note": "Read-only recovery from uploaded SLDPRT import bodies; originals retained. Not used as new finger geometry.",
+  "short_U": {
+    "bbox_mm": [
+      27,
+      44.2,
+      20
+    ],
+    "volume_mm3": 3233.1411325985555
+  },
+  "long_U": {
+    "bbox_mm": [
+      37,
+      55.6,
+      20
+    ],
+    "volume_mm3": 4243.292006587695
+  }
+}

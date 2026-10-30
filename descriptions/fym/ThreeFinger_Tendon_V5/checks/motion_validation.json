@@ -1,0 +1,19 @@
+{
+  "mujoco_version": "3.3.7",
+  "prebend_at_3s_deg": [
+    13.282906170563157,
+    2.6234006004090022,
+    13.282906170563157,
+    2.6234006004090102,
+    13.282906170563168,
+    2.623400600409006
+  ],
+  "maximum_flexion_deg": 27.58407568750682,
+  "released_joint_error_deg": 0.08696033908273341,
+  "uncommanded_BC_max_deg": 0.09090663672868365,
+  "motor_torque_cap_Nm": 0.15,
+  "pad_friction": 1.0,
+  "band_values_are_unmeasured_calibration_targets": true,
+  "root_radius_mm": 65,
+  "finger_total_length_mm": 110
+}

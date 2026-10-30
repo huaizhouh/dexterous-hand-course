@@ -1,0 +1,33 @@
+{
+  "date_utc": "2026-10-30",
+  "mujoco_version": "3.3.7",
+  "cadquery_version": "2.7.0",
+  "version": "V5",
+  "fixed_root_radius_mm": 65,
+  "fixed_finger_total_length_mm": 110,
+  "unchanged_torque_cap_Nm": 0.15,
+  "unchanged_pad_friction": 1.0,
+  "source_sha256": {
+    "run_v5_sim.py": "ae6d902631657f326bd50a8880cb0b2d07c814c11b0ec73b4ee757f24bc07ae9",
+    "simulation/run_benchmarks.py": "4ae6c64b72f8f98164fa384c47e018912c475b98cb4359dfa1812633f8c01942",
+    "simulation/grasp_profiles.json": "929ded1b03fdc93615a967a4d3f05b56b5492cc0725e956caad42444f7a86601",
+    "source/parameters.json": "1930a5cb557df97eec18d09433453c0264cb8bcc47a2e7b3835aae6ee9129625",
+    "source/pad_collision.json": "34f5aa8decc116a269c2093d36f84d40331f1fb4beee83a49fd8155b60e68b0d",
+    "source/build_hand.py": "1a127954d919f13132609f9d353bd9c4321c573920cb4de1c99e74c2231c19c0",
+    "source/pad_geometry.py": "c0e077d7e092e27639fad5e09e828314eae59e0278f5e1f6eeb59da693e86e67",
+    "comparison/baseline_v4/run_v4_sim.py": "e327eb12cc3088238ec62ec9ac9b135f245c71018ff1dd5bbd3838f0d56d2db1"
+  },
+  "benchmark_results": {
+    "v4": {
+      "passed": 11,
+      "tested": 42,
+      "numerically_stable": true
+    },
+    "v5": {
+      "passed": 34,
+      "tested": 42,
+      "numerically_stable": true
+    }
+  },
+  "limitations": "Unmeasured band/friction/torque and material assumptions; approximate rigid contact proxies; no physical print/grasp test or SolidWorks runtime."
+}

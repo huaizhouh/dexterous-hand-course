@@ -1,0 +1,268 @@
+[
+  {
+    "file": "base.stl",
+    "watertight": true,
+    "consistent_winding": true,
+    "bodies": 1,
+    "faces": 4288,
+    "bbox_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        210.0,
+        210.0,
+        6.0
+      ]
+    ]
+  },
+  {
+    "file": "clamp.stl",
+    "watertight": true,
+    "consistent_winding": true,
+    "bodies": 1,
+    "faces": 3410,
+    "bbox_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        62.0,
+        62.5,
+        21.399999618530273
+      ]
+    ]
+  },
+  {
+    "file": "column.stl",
+    "watertight": true,
+    "consistent_winding": true,
+    "bodies": 1,
+    "faces": 840,
+    "bbox_mm": [
+      [
+        0.002685406245291233,
+        0.0006713891634717584,
+        0.0
+      ],
+      [
+        12.0,
+        11.99932861328125,
+        62.0
+      ]
+    ]
+  },
+  {
+    "file": "cradle.stl",
+    "watertight": true,
+    "consistent_winding": true,
+    "bodies": 1,
+    "faces": 3608,
+    "bbox_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        62.0,
+        62.5,
+        25.100000381469727
+      ]
+    ]
+  },
+  {
+    "file": "distal.stl",
+    "watertight": true,
+    "consistent_winding": true,
+    "bodies": 1,
+    "faces": 2776,
+    "bbox_mm": [
+      [
+        0.0031155417673289776,
+        3.552713678800501e-15,
+        -7.768102101577746e-16
+      ],
+      [
+        55.0,
+        29.299999237060547,
+        16.0
+      ]
+    ]
+  },
+  {
+    "file": "footpad.stl",
+    "watertight": true,
+    "consistent_winding": true,
+    "bodies": 1,
+    "faces": 836,
+    "bbox_mm": [
+      [
+        0.0031329740304499865,
+        0.0007832873379811645,
+        0.0
+      ],
+      [
+        14.0,
+        13.99921703338623,
+        7.0
+      ]
+    ]
+  },
+  {
+    "file": "guide_back.stl",
+    "watertight": true,
+    "consistent_winding": true,
+    "bodies": 1,
+    "faces": 6224,
+    "bbox_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        40.0,
+        8.800000190734863,
+        20.0
+      ]
+    ]
+  },
+  {
+    "file": "guide_front.stl",
+    "watertight": true,
+    "consistent_winding": true,
+    "bodies": 1,
+    "faces": 5340,
+    "bbox_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        39.5,
+        3.299999952316284,
+        20.0
+      ]
+    ]
+  },
+  {
+    "file": "pad_distal.stl",
+    "watertight": true,
+    "consistent_winding": true,
+    "bodies": 1,
+    "faces": 44,
+    "bbox_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        14.0,
+        6.199999809265137,
+        35.599998474121094
+      ]
+    ]
+  },
+  {
+    "file": "pad_proximal.stl",
+    "watertight": true,
+    "consistent_winding": true,
+    "bodies": 1,
+    "faces": 20,
+    "bbox_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        16.0,
+        3.799999952316284,
+        26.0
+      ]
+    ]
+  },
+  {
+    "file": "palm.stl",
+    "watertight": true,
+    "consistent_winding": true,
+    "bodies": 1,
+    "faces": 15168,
+    "bbox_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        210.0,
+        210.0,
+        6.0
+      ]
+    ]
+  },
+  {
+    "file": "proximal.stl",
+    "watertight": true,
+    "consistent_winding": true,
+    "bodies": 1,
+    "faces": 5000,
+    "bbox_mm": [
+      [
+        0.0031155417673289776,
+        0.0,
+        0.0
+      ],
+      [
+        77.49626922607422,
+        29.299999237060547,
+        24.600000381469727
+      ]
+    ]
+  },
+  {
+    "file": "root.stl",
+    "watertight": true,
+    "consistent_winding": true,
+    "bodies": 1,
+    "faces": 4292,
+    "bbox_mm": [
+      [
+        -1.8865344117863372e-16,
+        0.0,
+        0.0
+      ],
+      [
+        28.0,
+        30.5,
+        42.0
+      ]
+    ]
+  },
+  {
+    "file": "spool.stl",
+    "watertight": true,
+    "consistent_winding": true,
+    "bodies": 1,
+    "faces": 5480,
+    "bbox_mm": [
+      [
+        0.0,
+        0.0014546765014529228,
+        0.005818380508571863
+      ],
+      [
+        9.5,
+        25.998544692993164,
+        26.0
+      ]
+    ]
+  }
+]

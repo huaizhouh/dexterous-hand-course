@@ -1,0 +1,86 @@
+{
+  "sphere": {
+    "pre_mm": [
+      1,
+      1,
+      1
+    ],
+    "final_mm": [
+      12,
+      12,
+      12
+    ],
+    "base_m": 0.136,
+    "approach_m": 0.025
+  },
+  "pingpong": {
+    "pre_mm": [
+      3,
+      3,
+      3
+    ],
+    "final_mm": [
+      9,
+      9,
+      9
+    ],
+    "base_m": 0.136,
+    "approach_m": 0.025
+  },
+  "cube": {
+    "pre_mm": [
+      2,
+      2,
+      2
+    ],
+    "final_mm": [
+      13,
+      13,
+      13
+    ],
+    "base_m": 0.14,
+    "approach_m": 0.025
+  },
+  "cylinder": {
+    "pre_mm": [
+      3,
+      3,
+      3
+    ],
+    "final_mm": [
+      14.0,
+      14.0,
+      14.0
+    ],
+    "base_m": 0.14,
+    "approach_m": 0.025
+  },
+  "capsule": {
+    "pre_mm": [
+      5,
+      5,
+      5
+    ],
+    "final_mm": [
+      8,
+      8,
+      8
+    ],
+    "base_m": 0.128,
+    "approach_m": 0.025
+  },
+  "small_sphere": {
+    "pre_mm": [
+      5,
+      5,
+      5
+    ],
+    "final_mm": [
+      6.5,
+      6.5,
+      6.5
+    ],
+    "base_m": 0.18,
+    "approach_m": 0.025
+  }
+}

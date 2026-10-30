@@ -1,0 +1,84 @@
+{
+  "units": "mm",
+  "root_radius": 65.0,
+  "root_height": 24.0,
+  "proximal_axis_distance": 62.0,
+  "distal_axis_to_tip": 48.0,
+  "palm_side": 210.0,
+  "palm_thickness": 6.0,
+  "base_bottom": -68.0,
+  "base_thickness": 6.0,
+  "joint_hole_diameter": 3.3,
+  "joint_pin_diameter": 3.0,
+  "hinge_side_clearance": 0.3,
+  "tendon_diameter": 0.8,
+  "tendon_bore_diameter": 2.4,
+  "spool_cable_center_radius": 10.9,
+  "motor_axis_z": -32.0,
+  "poses": {
+    "OPEN": [
+      0.0,
+      0.0
+    ],
+    "ROOT_FIRST_REFERENCE": [
+      20.0,
+      5.0
+    ],
+    "WRAP_REFERENCE": [
+      15.0,
+      25.0
+    ]
+  },
+  "version": "V5",
+  "root_band_effective_stiffness_N_per_m": 100.0,
+  "distal_band_effective_stiffness_N_per_m": 250.0,
+  "elastic_neck_width": 6.0,
+  "pip_peg_base_y": 12.0,
+  "root_peg_base_y": 9.0,
+  "root_band_line_y": 12.0,
+  "pip_band_line_y": 15.0,
+  "root_band_corner_y": 13.5,
+  "pip_band_corner_y": 16.5,
+  "pads": {
+    "back_y": -9.8,
+    "center_front_y": -12.3,
+    "proximal_sections": [
+      [
+        18.0,
+        16.0,
+        1.3
+      ],
+      [
+        44.0,
+        16.0,
+        1.3
+      ]
+    ],
+    "distal_sections": [
+      [
+        12.0,
+        14.0,
+        1.5,
+        -12.3
+      ],
+      [
+        31.0,
+        14.0,
+        1.5,
+        -12.3
+      ],
+      [
+        44.6,
+        9.0,
+        1.1,
+        -12.3
+      ],
+      [
+        47.6,
+        8.0,
+        1.0,
+        -15.0
+      ]
+    ]
+  }
+}

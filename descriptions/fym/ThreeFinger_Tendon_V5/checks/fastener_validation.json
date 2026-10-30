@@ -1,0 +1,11 @@
+{
+  "pose_deg": [
+    0,
+    0
+  ],
+  "scope": "Finger A fasteners vs all same-module rigid parts and palm; one frame column. Other module geometry is identical by radial transform.",
+  "candidate_pairs": 143,
+  "threshold_mm3": 0.03,
+  "unresolved": [],
+  "not_checked": "Thread engagement, real screw-head profiles, tool access and bolt-preload deformation need physical trial assembly."
+}

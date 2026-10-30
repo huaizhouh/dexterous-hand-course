@@ -1,0 +1,308 @@
+{
+  "source_sha256": "017078d89b5f7c8b2b7bcc01605c3a6b4c02b40a429ab68bbe4b59d16ae32cca",
+  "teacher_source_solids": 8,
+  "unused_source_solid_indices": [
+    2,
+    3
+  ],
+  "parts": {
+    "palm": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 194587.94458650137,
+      "bbox_mm": [
+        -105.0,
+        -105.0,
+        0.0,
+        105.0,
+        105.0,
+        6.000000000000001
+      ],
+      "mesh_degenerate_facets_removed": 0
+    },
+    "base": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 159866.62317166117,
+      "bbox_mm": [
+        -105.0,
+        -105.0,
+        -68.0,
+        105.0,
+        105.0,
+        -62.0
+      ],
+      "mesh_degenerate_facets_removed": 0
+    },
+    "root": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 8110.094177516577,
+      "bbox_mm": [
+        -21.0,
+        -14.0,
+        -18.0,
+        21.0,
+        14.5,
+        10.0
+      ],
+      "mesh_degenerate_facets_removed": 0
+    },
+    "proximal": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 15638.931800227883,
+      "bbox_mm": [
+        -12.3,
+        -9.8,
+        -7.0,
+        12.3,
+        14.5,
+        70.5
+      ],
+      "mesh_degenerate_facets_removed": 0
+    },
+    "distal": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11724.754877116558,
+      "bbox_mm": [
+        -8.0,
+        -9.800000000000004,
+        -7.0,
+        8.0,
+        14.5,
+        48.0
+      ],
+      "mesh_degenerate_facets_removed": 0
+    },
+    "pad_proximal": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1114.5919999999994,
+      "bbox_mm": [
+        -8.0,
+        -12.9,
+        18.0,
+        8.0,
+        -9.8,
+        44.0
+      ],
+      "mesh_degenerate_facets_removed": 0
+    },
+    "pad_distal": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1342.767999999999,
+      "bbox_mm": [
+        -7.0,
+        -12.9,
+        12.0,
+        7.0,
+        -9.8,
+        47.6
+      ],
+      "mesh_degenerate_facets_removed": 0
+    },
+    "cradle": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 17705.49920968869,
+      "bbox_mm": [
+        -33.0,
+        -22.5,
+        -14.5,
+        29.0,
+        40.0,
+        10.600000000000001
+      ],
+      "mesh_degenerate_facets_removed": 0
+    },
+    "clamp": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 12984.280179460897,
+      "bbox_mm": [
+        -33.0,
+        -22.5,
+        10.6,
+        29.0,
+        40.0,
+        32.0
+      ],
+      "mesh_degenerate_facets_removed": 0
+    },
+    "spool": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 3162.704156221916,
+      "bbox_mm": [
+        27.0,
+        -13.0,
+        -13.0,
+        36.5,
+        13.0,
+        13.0
+      ],
+      "mesh_degenerate_facets_removed": 0
+    },
+    "guide_front": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1787.0903687731727,
+      "bbox_mm": [
+        -3.0,
+        -14.2,
+        -38.0,
+        36.5,
+        -10.899999999999999,
+        -18.0
+      ],
+      "mesh_degenerate_facets_removed": 2
+    },
+    "guide_back": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2115.2837367487296,
+      "bbox_mm": [
+        -3.0,
+        -10.900000000000002,
+        -38.0,
+        37.0,
+        -2.1000000000000005,
+        -18.0
+      ],
+      "mesh_degenerate_facets_removed": 2
+    },
+    "column": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 6069.305679323192,
+      "bbox_mm": [
+        -6.0,
+        -6.0,
+        -62.0,
+        6.0,
+        6.0,
+        0.0
+      ],
+      "mesh_degenerate_facets_removed": 0
+    },
+    "footpad": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 546.234997864965,
+      "bbox_mm": [
+        -7.0,
+        -7.0,
+        -75.0,
+        7.0,
+        7.0,
+        -68.0
+      ],
+      "mesh_degenerate_facets_removed": 0
+    },
+    "motor_body": {
+      "valid": true,
+      "solids": 4,
+      "volume_mm3": 25632.201837788412,
+      "bbox_mm": [
+        -25.7,
+        -9.969562614261205,
+        -10.01956451818,
+        25.5000000000005,
+        29.969562614260003,
+        10.01956451818
+      ]
+    },
+    "main_horn": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 644.4097682896455,
+      "bbox_mm": [
+        21.700000000000003,
+        -9.999999999999998,
+        -10.0,
+        26.500000000000007,
+        10.000000000000002,
+        10.0
+      ]
+    },
+    "slave_horn": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 569.9102364519583,
+      "bbox_mm": [
+        -24.900000000000006,
+        -10.0,
+        -10.0,
+        -21.799999999999997,
+        10.0,
+        10.0
+      ]
+    }
+  },
+  "parameters": {
+    "units": "mm",
+    "root_radius": 65.0,
+    "root_height": 24.0,
+    "proximal_axis_distance": 62.0,
+    "distal_axis_to_tip": 48.0,
+    "palm_side": 210.0,
+    "palm_thickness": 6.0,
+    "base_bottom": -68.0,
+    "base_thickness": 6.0,
+    "joint_hole_diameter": 3.3,
+    "joint_pin_diameter": 3.0,
+    "hinge_side_clearance": 0.3,
+    "tendon_diameter": 0.8,
+    "tendon_bore_diameter": 2.4,
+    "spool_cable_center_radius": 10.9,
+    "motor_axis_z": -32.0,
+    "poses": {
+      "OPEN": [
+        0.0,
+        0.0
+      ],
+      "GRASP_60mm_REFERENCE": [
+        8.0,
+        25.0
+      ],
+      "PINCH_10mm_REFERENCE": [
+        12.0,
+        49.0
+      ]
+    }
+  },
+  "cadquery_version": "2.7.0",
+  "neutral_route_length_mm": 191.83313557495526,
+  "poses": {
+    "OPEN": {
+      "q_deg": [
+        0.0,
+        0.0
+      ],
+      "route_length_mm": 191.83313557495526,
+      "takeup_mm": 0.0,
+      "spool_rotation_deg": 0.0
+    },
+    "GRASP_60mm_REFERENCE": {
+      "q_deg": [
+        8.0,
+        25.0
+      ],
+      "route_length_mm": 186.70874043784428,
+      "takeup_mm": 5.12439513711098,
+      "spool_rotation_deg": 26.93634990035064
+    },
+    "PINCH_10mm_REFERENCE": {
+      "q_deg": [
+        12.0,
+        49.0
+      ],
+      "route_length_mm": 181.57968173071865,
+      "takeup_mm": 10.253453844236617,
+      "spool_rotation_deg": 53.89721382632546
+    }
+  }
+}

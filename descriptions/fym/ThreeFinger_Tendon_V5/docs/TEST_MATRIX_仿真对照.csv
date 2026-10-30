@@ -1,0 +1,7 @@
+﻿物体,场景键,v4_center,v4_placements,v4_center_min_lift_mm,v5_center,v5_placements,v5_center_min_lift_mm
+60 mm 球 / 35 g,sphere,通过,7/7,93.6,通过,7/7,99.1
+40 mm 方块 / 25 g,cube,失败,4/7,-22.0,通过,6/7,103.7
+40×50 mm 圆柱 / 25 g,cylinder,失败,0/7,-18.0,通过,7/7,110.2
+20×70 mm 竖放圆头细长体 / 15 g,capsule,失败,0/7,-0.1,失败,0/7,-35.0
+10 mm 小球 / 2 g（高支撑）,small_sphere,失败,0/7,-64.1,通过,7/7,72.9
+40 mm 乒乓球 / 2.7 g（新增）,pingpong,失败,0/7,-0.1,通过,7/7,90.1

@@ -1,0 +1,86 @@
+"""Regenerate human-readable summaries from the shipped benchmark JSON files."""
+import csv,json
+from pathlib import Path
+
+ROOT=Path(__file__).resolve().parents[1]
+NAMES={'sphere':'60 mm 球 / 35 g','cube':'40 mm 方块 / 25 g','cylinder':'40×50 mm 圆柱 / 25 g',
+       'capsule':'20×70 mm 竖放圆头细长体 / 15 g','small_sphere':'10 mm 小球 / 2 g（高支撑）',
+       'pingpong':'40 mm 乒乓球 / 2.7 g（新增）'}
+
+def main():
+    summaries={v:json.loads((ROOT/f'checks/benchmarks/{v}_summary.json').read_text()) for v in ['v4','v5']}
+    rows=[]
+    for name,label in NAMES.items():
+        row={'物体':label,'场景键':name}
+        for v in ['v4','v5']:
+            rr=[r for r in summaries[v]['results'] if r['object']==name]
+            center=next(r for r in rr if r['pose']=='center')
+            row[v+'_center']='通过' if center['full_cycle_success'] else '失败'
+            row[v+'_placements']=f"{sum(r['full_cycle_success'] for r in rr)}/{len(rr)}"
+            row[v+'_center_min_lift_mm']=round(center['minimum_lift_mm'],1)
+        rows.append(row)
+    with (ROOT/'docs/TEST_MATRIX_仿真对照.csv').open('w',encoding='utf-8-sig',newline='') as f:
+        w=csv.DictWriter(f,fieldnames=rows[0].keys());w.writeheader();w.writerows(rows)
+    table='| 物体 | V4 居中 | V5 居中 | V4 七位置 | V5 七位置 |\n|---|---|---|---|---|\n'
+    table+='\n'.join(f"| {r['物体']} | {r['v4_center']} | {r['v5_center']} | {r['v4_placements']} | {r['v5_placements']} |" for r in rows)
+    totals={v:sum(r['full_cycle_success'] for r in summaries[v]['results']) for v in summaries}
+    profiles=json.loads((ROOT/'simulation/grasp_profiles.json').read_text())
+    profiletable='| 物体 | 预弯收绳 mm | 最终收绳 mm | 虚拟夹具抓取高度 m |\n|---|---|---|---|\n'
+    profiletable+='\n'.join(f"| {name} | {p['pre_mm']} | {p['final_mm']} | {p['base_m']} |" for name,p in profiles.items())
+    doc=f'''# V5 仿真对照与边界
+
+## 结论
+
+固定指根位置、保持 110 mm 总指长，并保持相同的舵机转矩上限与摩擦假设，V5 对原五种物体的居中完整周期由 **1/5 提高到 4/5**。新增乒乓球也通过居中测试。
+
+六种物体、各七位置合计：V4 **{totals['v4']}/42**，V5 **{totals['v5']}/42**。这些是确定性样本计数，不是实物成功率，也不是对任意日用品的保证。
+
+{table}
+
+七个位置为居中、X 正负 1 mm、Y 正负 1 mm，以及 (+2,-2) mm、(-2,+2) mm。V4 与 V5 使用相同的物体大小、质量、初始位置偏差及支撑。乒乓球是补入 V4 脚本的新对照场景；原五种物体没有被替换。
+
+## 判断标准
+
+完整周期通过需同时满足：保持阶段全程抬离初始高度至少 40 mm；至少两指具有大于 0.5 mN 的正向接触力；物体脱离地面和支撑；保持阶段位置漂移小于 8 mm；松绳后各关节误差小于 4°；整个周期无大于 5 mN 的手指碰地接触；数值运行稳定。
+
+V5 保持窗口为 11.5-12.8 s，复位窗口为 17.8-18 s；V4 旧周期对应 7.5-8.8 s 与 13.8-14 s。虚拟夹具都抬升 70 mm；物体不会绑定或由脚本抬升。关闭对象支撑碰撞、降低物体质量或增加舵机转矩均未用于得到结果。
+
+## 改动与动作证据
+
+1. 根部回弹较软、第二关节较强；第二关节挂点外移，并用两环并联。仿真等效根/指间刚度为 100/250 N/m，是待实物标定的目标。
+2. 无物体时 3 mm 预弯阶段，指根约 13.28°、第二关节约 2.62°；第二关节没有抢先卷曲。放绳后关节最大残余约 0.09°。只收 A 指时 B/C 最大运动约 0.091°。
+3. 接触面采用浅 V 槽与收窄柔性指端挡边。CAD 与 MuJoCo 的软垫使用同一组凸单元，避免整个凹面被单一凸包填平。
+4. 三个卷线轮反作用转矩和单向绳张力保留；六个手指关节没有位置执行器。最终动作采用预弯、接近、包覆、抬升、回落、松绳上撤的开环位置预设，不依赖实际硬件没有的力反馈。
+5. 转矩上限始终为 0.15 N·m，指垫摩擦参数始终为 1.0；这些沿用 V4 假设，不能视为老师舵机已测额定值。
+
+## 仍然失败的情况
+
+**竖放细长体：0/7。** 居中轨迹中，包覆阶段曾形成三指接触，但随后物体横向偏移并从两指间滑出，抬升阶段已失去接触。这个模型的失败首先表现为接触稳定性与摆放方向问题，不能据此认定实物舵机力量不足。固定三指位置、相同一绳两关节结构下，当前回弹/收绳预设仍未解决它。
+
+**方块：6/7。** (+2,-2) mm 偏移仍失败，其余六个位置通过。参数搜索中继续增加收绳量会卷得更紧并降低通过数，因此最终采用较小的收绳量。
+
+**10 mm 小球仅验证高支撑场景。** 支撑和质量沿用 V4；不等于从平桌面直接拾起 10 mm 球已经通过。乒乓球和其他物体也应按考试实物尺寸、质量、表面与摆放重新建模。
+
+## 最终预设
+
+{profiletable}
+
+数组顺序为 A/B/C。高度是虚拟夹具坐标，不能直接变成第四个舵机指令。预设收绳量须经舵机零点、方向和 PWM 比例标定后才能用于实物。
+
+## 几何与模型范围
+
+14 类打印网格均封闭、单连通且法向一致；整机四份 STEP 均重新导入为有效实体。静态参考姿态、关节局部抽样、参考动作中间姿态和紧固件检查见 `checks`。
+
+另外按最终居中仿真角度抽取六物体各 3 个状态（预弯、包覆、保持），对精确的指根/近端/远端硬质实体作 B-rep 相交检查：18 个状态未发现大于 0.03 mm³ 的刚体相交。此项不覆盖连续轨迹、全部偏移位置、负载变形或软垫压缩。
+
+V5 已补入刚性指垫支撑与绳道外壳的碰撞代理；刚性部件仍采用简化盒/圆柱，舵机外壳仅作近似视觉。V4 对照保留原脚本原碰撞近似。不同动作高度、控制策略与接触几何共同改变，因此结果属于整版方案比较，不能单独归因给某一个参数。
+
+未执行真实 SolidWorks 软件导入、打印、通信或实物抓取。实际皮筋刚度、轴摩擦、绳道摩擦、软垫材料、舵机转矩/速度/电源能力均待测量。
+
+## 复现
+
+根目录执行 `python simulation/run_benchmarks.py --design both --full`。原始每条轨迹与汇总见 `checks/benchmarks`；运行说明见 `SIMULATION_仿真操作.md`。CAD 源码、原始老师模型和 V4 基线一并保留。
+'''
+    (ROOT/'docs/TEST_RESULTS_仿真对照.md').write_text(doc,encoding='utf-8')
+    print(table);print('Totals',totals)
+if __name__=='__main__':main()
