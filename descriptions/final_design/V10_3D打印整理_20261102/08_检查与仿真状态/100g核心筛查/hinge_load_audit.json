@@ -1,0 +1,35 @@
+{
+  "passed": false,
+  "maximum_observed_hinge_moment_nm": 12.099300332111643,
+  "conservative_stop_force_n": 1423.4470978954873,
+  "conservative_lever_mm": 8.5,
+  "results": [
+    {
+      "joint": "root",
+      "stress_mpa": {
+        "column": 235.1644047580137,
+        "child_body": 38.1280472650577,
+        "wing": 74.81920283153141
+      },
+      "deflection_mm": 3.4672464065154345,
+      "minimum_open_angle_deg": -20.071981080383722,
+      "pressure_mpa": 63.264315462021656,
+      "passed": false
+    },
+    {
+      "joint": "pip",
+      "stress_mpa": {
+        "column": 235.1644047580137,
+        "child_body": 38.1280472650577,
+        "wing": 74.81920283153141,
+        "parent_arm": 38.1280472650577,
+        "bar_von_mises": 66.58325180590343
+      },
+      "deflection_mm": 8.577876603094179,
+      "minimum_open_angle_deg": -42.342227618258,
+      "pressure_mpa": 63.264315462021656,
+      "passed": false
+    }
+  ],
+  "scope": "Existing linear beam stop sizing, conservatively loaded with peak full hinge wrench. No fatigue, FEA, calibrated material or servo stall approval."
+}

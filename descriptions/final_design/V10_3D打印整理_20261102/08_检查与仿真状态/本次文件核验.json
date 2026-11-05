@@ -1,0 +1,190 @@
+{
+  "checked_date": "2026-11-02",
+  "file_preparation_passed": true,
+  "whole_hand_part_types": 12,
+  "whole_hand_quantity": 32,
+  "rigid_quantity": 26,
+  "soft_pad_quantity": 6,
+  "calibration_part_types": 3,
+  "single_finger_quantity": 10,
+  "step_stl_pairs_checked": 15,
+  "nonprinted_step_parts_checked": [
+    "joint_sleeve.step",
+    "main_horn.step",
+    "motor_body.step",
+    "slave_horn.step"
+  ],
+  "checks": [
+    {
+      "part": "palm",
+      "step_single_valid_solid": true,
+      "positive_volume": true,
+      "stl_watertight": true,
+      "stl_winding_consistent": true,
+      "stl_body_count": 1,
+      "identical_to_V10_original": true,
+      "step_stl_sorted_extent_max_difference_mm": 4.660663421418576e-06,
+      "step_schema": "AP214"
+    },
+    {
+      "part": "handle",
+      "step_single_valid_solid": true,
+      "positive_volume": true,
+      "stl_watertight": true,
+      "stl_winding_consistent": true,
+      "stl_body_count": 1,
+      "identical_to_V10_original": true,
+      "step_stl_sorted_extent_max_difference_mm": 0.013427031226456165,
+      "step_schema": "AP214"
+    },
+    {
+      "part": "root",
+      "step_single_valid_solid": true,
+      "positive_volume": true,
+      "stl_watertight": true,
+      "stl_winding_consistent": true,
+      "stl_body_count": 1,
+      "identical_to_V10_original": true,
+      "step_stl_sorted_extent_max_difference_mm": 5.383287486893096e-07,
+      "step_schema": "AP214"
+    },
+    {
+      "part": "proximal",
+      "step_single_valid_solid": true,
+      "positive_volume": true,
+      "stl_watertight": true,
+      "stl_winding_consistent": true,
+      "stl_body_count": 1,
+      "identical_to_V10_original": true,
+      "step_stl_sorted_extent_max_difference_mm": 0.0030741444788873196,
+      "step_schema": "AP214"
+    },
+    {
+      "part": "distal",
+      "step_single_valid_solid": true,
+      "positive_volume": true,
+      "stl_watertight": true,
+      "stl_winding_consistent": true,
+      "stl_body_count": 1,
+      "identical_to_V10_original": true,
+      "step_stl_sorted_extent_max_difference_mm": 0.0030741444790862715,
+      "step_schema": "AP214"
+    },
+    {
+      "part": "cradle",
+      "step_single_valid_solid": true,
+      "positive_volume": true,
+      "stl_watertight": true,
+      "stl_winding_consistent": true,
+      "stl_body_count": 1,
+      "identical_to_V10_original": true,
+      "step_stl_sorted_extent_max_difference_mm": 3.8146972514141453e-07,
+      "step_schema": "AP214"
+    },
+    {
+      "part": "clamp",
+      "step_single_valid_solid": true,
+      "positive_volume": true,
+      "stl_watertight": true,
+      "stl_winding_consistent": true,
+      "stl_body_count": 1,
+      "identical_to_V10_original": true,
+      "step_stl_sorted_extent_max_difference_mm": 3.8146972514141453e-07,
+      "step_schema": "AP214"
+    },
+    {
+      "part": "spool",
+      "step_single_valid_solid": true,
+      "positive_volume": true,
+      "stl_watertight": true,
+      "stl_winding_consistent": true,
+      "stl_body_count": 1,
+      "identical_to_V10_original": true,
+      "step_stl_sorted_extent_max_difference_mm": 0.005818380508571863,
+      "step_schema": "AP214"
+    },
+    {
+      "part": "guide_front",
+      "step_single_valid_solid": true,
+      "positive_volume": true,
+      "stl_watertight": true,
+      "stl_winding_consistent": true,
+      "stl_body_count": 1,
+      "identical_to_V10_original": true,
+      "step_stl_sorted_extent_max_difference_mm": 4.7683714754498396e-08,
+      "step_schema": "AP214"
+    },
+    {
+      "part": "guide_back",
+      "step_single_valid_solid": true,
+      "positive_volume": true,
+      "stl_watertight": true,
+      "stl_winding_consistent": true,
+      "stl_body_count": 1,
+      "identical_to_V10_original": true,
+      "step_stl_sorted_extent_max_difference_mm": 1.9073486257070726e-07,
+      "step_schema": "AP214"
+    },
+    {
+      "part": "pad_proximal",
+      "step_single_valid_solid": true,
+      "positive_volume": true,
+      "stl_watertight": true,
+      "stl_winding_consistent": true,
+      "stl_body_count": 1,
+      "identical_to_V10_original": true,
+      "step_stl_sorted_extent_max_difference_mm": 4.369837824924616e-13,
+      "step_schema": "AP214"
+    },
+    {
+      "part": "pad_distal",
+      "step_single_valid_solid": true,
+      "positive_volume": true,
+      "stl_watertight": true,
+      "stl_winding_consistent": true,
+      "stl_body_count": 1,
+      "identical_to_V10_original": true,
+      "step_stl_sorted_extent_max_difference_mm": 9.53675201031956e-08,
+      "step_schema": "AP214"
+    },
+    {
+      "part": "bore_coupon_705_710_720_725_730",
+      "step_single_valid_solid": true,
+      "positive_volume": true,
+      "stl_watertight": true,
+      "stl_winding_consistent": true,
+      "stl_body_count": 1,
+      "identical_to_V10_original": true,
+      "step_stl_sorted_extent_max_difference_mm": 0.0,
+      "step_schema": "AP214"
+    },
+    {
+      "part": "joint_trial_parent",
+      "step_single_valid_solid": true,
+      "positive_volume": true,
+      "stl_watertight": true,
+      "stl_winding_consistent": true,
+      "stl_body_count": 1,
+      "identical_to_V10_original": true,
+      "step_stl_sorted_extent_max_difference_mm": 5.383287486893096e-07,
+      "step_schema": "AP214"
+    },
+    {
+      "part": "joint_trial_child",
+      "step_single_valid_solid": true,
+      "positive_volume": true,
+      "stl_watertight": true,
+      "stl_winding_consistent": true,
+      "stl_body_count": 1,
+      "identical_to_V10_original": true,
+      "step_stl_sorted_extent_max_difference_mm": 0.002175725996494293,
+      "step_schema": "AP214"
+    }
+  ],
+  "ap203_converted": false,
+  "native_solidworks_package_created": false,
+  "material_and_slicer_parameters_confirmed": false,
+  "order_submitted": false,
+  "grasp_acceptance_passed": false,
+  "scope": "File validity and unchanged V10 copies only; no manufacturing or grasp certification."
+}

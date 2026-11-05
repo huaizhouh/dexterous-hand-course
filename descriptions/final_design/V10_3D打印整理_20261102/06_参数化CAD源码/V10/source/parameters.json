@@ -1,0 +1,208 @@
+{
+  "units": "mm",
+  "root_radius": 65.0,
+  "root_height": 24.0,
+  "proximal_axis_distance": 62.0,
+  "distal_axis_to_tip": 48.0,
+  "palm_thickness": 6.0,
+  "joint_hole_diameter": 7.2,
+  "joint_pin_diameter": 3.0,
+  "hinge_side_clearance": 0.3,
+  "tendon_diameter": 0.8,
+  "tendon_bore_diameter": 2.4,
+  "spool_cable_center_radius": 10.9,
+  "motor_axis_z": -32.0,
+  "poses": {
+    "OPEN": [
+      4.0,
+      4.0
+    ],
+    "ROOT_FIRST_REFERENCE": [
+      20.0,
+      5.0
+    ],
+    "WRAP_REFERENCE": [
+      15.0,
+      25.0
+    ]
+  },
+  "version": "V10",
+  "root_band_effective_stiffness_N_per_m": 500.0,
+  "distal_band_effective_stiffness_N_per_m": 350.0,
+  "elastic_neck_width": 6.0,
+  "pip_peg_base_y": 12.0,
+  "root_peg_base_y": 9.0,
+  "root_band_line_y": 12.0,
+  "pip_band_line_y": 15.0,
+  "root_band_corner_y": 13.5,
+  "pip_band_corner_y": 16.5,
+  "pads": {
+    "back_y": -9.8,
+    "center_front_y": -14.0,
+    "proximal_sections": [
+      [
+        14.0,
+        22.0,
+        0.8
+      ],
+      [
+        48.0,
+        22.0,
+        0.8
+      ]
+    ],
+    "distal_sections": [
+      [
+        10,
+        20,
+        0.8,
+        -14
+      ],
+      [
+        30,
+        22,
+        0.8,
+        -14
+      ],
+      [
+        37,
+        18,
+        0.8,
+        -14
+      ],
+      [
+        42,
+        12,
+        0.6,
+        -14.5
+      ],
+      [
+        46,
+        8,
+        0.4,
+        -15
+      ],
+      [
+        48,
+        6,
+        0.3,
+        -15
+      ],
+      [
+        49.5,
+        3,
+        0.2,
+        -14.7
+      ],
+      [
+        50.5,
+        1,
+        0.1,
+        -14
+      ]
+    ]
+  },
+  "palm_hub_diameter": 64.0,
+  "palm_spoke_width": 18.0,
+  "palm_mount_rail_width": 9.0,
+  "handle_flange_diameter": 60.0,
+  "handle_flange_thickness": 8.0,
+  "handle_mount_bolt_circle_diameter": 48.0,
+  "handle_mount_hole_diameter": 4.4,
+  "handle_grip_diameter": 36.0,
+  "handle_grip_length": 100.0,
+  "handle_grip_top_z": -54.0,
+  "handle_bottom": -160.0,
+  "handle_butt_diameter": 42.0,
+  "handle_butt_height": 6.0,
+  "handle_cable_bore_diameter": 24.0,
+  "joint_sleeve_od": 7.0,
+  "joint_sleeve_id": 3.2,
+  "joint_sleeve_length": 25.0,
+  "joint_fork_outer_width": 24.4,
+  "joint_fork_inner_width": 17.0,
+  "joint_rotor_width": 16.0,
+  "joint_thrust_washer_thickness": 0.3,
+  "joint_outer_washer_thickness": 1.0,
+  "joint_fork_bore_diameter": 7.2,
+  "joint_open_stop_angle_deg": 4.0,
+  "joint_stop_z0": 9.0,
+  "joint_stop_z1": 14.0,
+  "joint_stop_x0": 8.8,
+  "joint_stop_x1": 13.3,
+  "joint_stop_back_y": 14.0,
+  "joint_stop_front_y": 5.5,
+  "joint_stop_stem_front_y": 7.0,
+  "joint_stop_stem_z0": -12.0,
+  "joint_wing_x0": 7.0,
+  "joint_wing_front_y": -5.5,
+  "joint_stop_foot_top_z": 8.0,
+  "joint_stop_foot_front_y": 4.0,
+  "joint_thrust_washer_id": 7.2,
+  "joint_thrust_washer_od": 11.0,
+  "joint_outer_washer_id": 3.2,
+  "joint_outer_washer_od": 10.0,
+  "joint_bearing_friction_coefficient": 0.15,
+  "joint_thrust_friction_coefficient": 0.15,
+  "joint_axial_bias_N": 0.1,
+  "joint_extra_breakaway_Nm": 2e-05,
+  "joint_friction_load_cap_N": 100.0,
+  "joint_stop_combined_face_error_mm": 0.3,
+  "joint_stop_effective_modulus_MPa": 1000.0,
+  "joint_sleeve_modulus_MPa": 70000.0,
+  "joint_bolt_preload_check_N": 300.0,
+  "joint_pin_bolt_length": 35.0,
+  "joint_pin_nut_height": 4.0,
+  "band_free_length_ratio": 0.85,
+  "proximal_mass_kg": 0.03,
+  "distal_mass_kg": 0.017,
+  "proximal_com_z_mm": 42.0,
+  "joint_stop_additional_compliance_mm": 0.03,
+  "joint_damper_fluid_cSt": 1000000.0,
+  "joint_damper_fluid_density_kg_m3": 978.0,
+  "joint_damper_active_length_mm": 16.0,
+  "joint_nut_cage_outer_radius": 7.0,
+  "joint_nut_pocket_af": 5.8,
+  "joint_nut_cage_end_x": 18.0,
+  "joint_nut_relief_radius": 5.25,
+  "joint_nut_relief_end_x": 13.8,
+  "elastic_neck_diameter": 5.0,
+  "elastic_cap_diameter": 9.5,
+  "joint_stop_allowable_compression_MPa": 8.0,
+  "finger_body_thickness": 14.0,
+  "proximal_crossbar_thickness": 12.0,
+  "proximal_crossbar_depth": 18.0,
+  "proximal_inertia_x_kgm2": 1.6e-05,
+  "distal_inertia_x_kgm2": 4.2e-06,
+  "pad_friction_nominal": 1.0,
+  "proximal_pad_backing_width_mm": 20.0,
+  "distal_pad_backing_width_mm": 20.0,
+  "mechanical_extension_stops_enabled": true,
+  "joint_stop_layout": "compact",
+  "contact_friction_scope": "pads_only",
+  "table_object_friction": 0.5,
+  "rigid_object_friction": 0.3,
+  "root_mount_outward_deg": 10.0,
+  "root_max_flexion_deg": 60.0,
+  "rigid_density_kg_m3": 1240.0,
+  "pad_density_kg_m3": 1200.0,
+  "motion_stabilization_after_lift_s": 3.0,
+  "moving_hardware_lumps": {
+    "proximal": {
+      "mass_kg": 0.006,
+      "center_mm": [
+        0,
+        0,
+        62
+      ]
+    },
+    "distal": {
+      "mass_kg": 0.001,
+      "center_mm": [
+        0,
+        0,
+        0
+      ]
+    }
+  }
+}

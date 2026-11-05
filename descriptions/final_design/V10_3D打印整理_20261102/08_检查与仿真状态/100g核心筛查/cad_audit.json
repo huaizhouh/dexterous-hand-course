@@ -1,0 +1,200 @@
+{
+  "passed": false,
+  "audited_stages": [
+    "core"
+  ],
+  "passed_only": false,
+  "source_archive_used": true,
+  "auditor_sha256": "56f6b2965c0c3794e81b487afb582986165169d4f9acfa991a5afe3fe7a5beca",
+  "step_solids_valid_and_bbox_matched": true,
+  "witnesses": [
+    {
+      "trial_id": "capsule_010mm_vertical_center_yaw0_mu0.5_tau0.15_band1_link1_dt0.0005_core",
+      "time_s": 4.94299999999998,
+      "joint_deg": [
+        3.9925111245106946,
+        31.632173347917984,
+        3.9924676002070383,
+        31.61594908068427,
+        3.9925240117673875,
+        31.607737837796048
+      ],
+      "rigid_interferences": [],
+      "hardware_below_table": [
+        {
+          "part": "finger_A_distal",
+          "minimum_z_mm": -6.673992265719547
+        },
+        {
+          "part": "finger_B_distal",
+          "minimum_z_mm": -6.678087424494522
+        },
+        {
+          "part": "finger_C_distal",
+          "minimum_z_mm": -6.6801477289561175
+        }
+      ],
+      "rigid_object_intersections": []
+    },
+    {
+      "trial_id": "capsule_010mm_vertical_center_yaw0_mu1_tau0.15_band1_link1_dt0.0005_core",
+      "time_s": 4.94299999999998,
+      "joint_deg": [
+        3.9925111245106946,
+        31.632173347917984,
+        3.9924676002070383,
+        31.61594908068427,
+        3.9925240117673875,
+        31.607737837796048
+      ],
+      "rigid_interferences": [],
+      "hardware_below_table": [
+        {
+          "part": "finger_A_distal",
+          "minimum_z_mm": -6.673992265719547
+        },
+        {
+          "part": "finger_B_distal",
+          "minimum_z_mm": -6.678087424494522
+        },
+        {
+          "part": "finger_C_distal",
+          "minimum_z_mm": -6.6801477289561175
+        }
+      ],
+      "rigid_object_intersections": []
+    },
+    {
+      "trial_id": "capsule_020mm_vertical_center_yaw0_mu0.5_tau0.15_band1_link1_dt0.0005_core",
+      "time_s": 4.9674999999999665,
+      "joint_deg": [
+        3.9996884783290674,
+        28.179043291501255,
+        3.9996884783290545,
+        28.179043291501326,
+        3.9996884783290545,
+        28.17904329150132
+      ],
+      "rigid_interferences": [],
+      "hardware_below_table": [
+        {
+          "part": "finger_A_distal",
+          "minimum_z_mm": -3.6543871613325463
+        },
+        {
+          "part": "finger_B_distal",
+          "minimum_z_mm": -3.6543871613325427
+        },
+        {
+          "part": "finger_C_distal",
+          "minimum_z_mm": -3.6543871613325436
+        }
+      ],
+      "rigid_object_intersections": []
+    },
+    {
+      "trial_id": "cylinder_090mm_center_yaw0_mu0.5_tau0.15_band1_link1_dt0.0005_core",
+      "time_s": 20.319499999997994,
+      "joint_deg": [
+        4.029903882790364,
+        75.01933224144105,
+        3.9107337171781125,
+        70.7751102908924,
+        3.887902888992677,
+        67.433026396719
+      ],
+      "rigid_interferences": [],
+      "hardware_below_table": [],
+      "rigid_object_intersections": [
+        {
+          "part": "finger_A_distal",
+          "intersection_mm3": 2.9826339262208594
+        },
+        {
+          "part": "finger_B_distal",
+          "intersection_mm3": 853.4151409730207
+        },
+        {
+          "part": "finger_C_distal",
+          "intersection_mm3": 837.3305468212666
+        }
+      ]
+    },
+    {
+      "trial_id": "cylinder_080mm_center_yaw0_mu0.5_tau0.15_band1_link1_dt0.0005_core",
+      "time_s": 20.468999999997646,
+      "joint_deg": [
+        3.7852578300806154,
+        73.42077222234605,
+        3.9255854158806147,
+        92.09555268143811,
+        3.9273939248955863,
+        91.86925751930752
+      ],
+      "rigid_interferences": [],
+      "hardware_below_table": [],
+      "rigid_object_intersections": [
+        {
+          "part": "finger_A_distal",
+          "intersection_mm3": 48.98172881499652
+        },
+        {
+          "part": "finger_B_distal",
+          "intersection_mm3": 639.4491141258928
+        },
+        {
+          "part": "finger_C_distal",
+          "intersection_mm3": 603.7908783372429
+        }
+      ]
+    },
+    {
+      "trial_id": "cylinder_070mm_center_yaw0_mu1_tau0.15_band1_link1_dt0.0005_core",
+      "time_s": 20.8754999999967,
+      "joint_deg": [
+        3.8924065966062344,
+        96.45608659572571,
+        3.8846997178643545,
+        96.2715518887254,
+        3.989563263835918,
+        97.53473737173708
+      ],
+      "rigid_interferences": [
+        {
+          "a": "finger_A_proximal",
+          "b": "finger_A_distal",
+          "intersection_mm3": 3.3566650228872716,
+          "accounted_stop_overlap_mm3": 0.0
+        },
+        {
+          "a": "finger_B_proximal",
+          "b": "finger_B_distal",
+          "intersection_mm3": 2.220748047866723,
+          "accounted_stop_overlap_mm3": 0.0
+        },
+        {
+          "a": "finger_C_proximal",
+          "b": "finger_C_distal",
+          "intersection_mm3": 14.820667215088896,
+          "accounted_stop_overlap_mm3": 0.0
+        }
+      ],
+      "hardware_below_table": [],
+      "rigid_object_intersections": [
+        {
+          "part": "finger_A_distal",
+          "intersection_mm3": 1468.3991138349993
+        },
+        {
+          "part": "finger_B_distal",
+          "intersection_mm3": 1419.7663418852635
+        },
+        {
+          "part": "finger_C_distal",
+          "intersection_mm3": 1561.836932540761
+        }
+      ]
+    }
+  ],
+  "scope": "Exact delivered STEP solids at detected contact/load extremes; passing diagnostics also check approach, closure, hold and release trace poses. Same-finger fastener stack and fixed assembly interfaces excluded; existing local fastener acceptance remains necessary. Soft pads/bands excluded. Sampled poses do not certify a continuous trajectory."
+}

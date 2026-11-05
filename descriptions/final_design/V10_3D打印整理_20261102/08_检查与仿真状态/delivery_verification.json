@@ -1,0 +1,11 @@
+{
+  "core_executed": 104,
+  "core_passed": 0,
+  "perturbations_skipped": 1212,
+  "print_gate_passed": false,
+  "shared_unit_checks_passed": 13,
+  "v10_integration_checks_passed": 3,
+  "single_finger_return_error_deg": 0.03184353722224431,
+  "v9_light_demo_regression_passed": true,
+  "local_document_links_verified": 23
+}

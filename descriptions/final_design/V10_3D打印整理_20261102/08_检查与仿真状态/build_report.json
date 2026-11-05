@@ -1,0 +1,515 @@
+{
+  "source_sha256": "017078d89b5f7c8b2b7bcc01605c3a6b4c02b40a429ab68bbe4b59d16ae32cca",
+  "teacher_source_solids": 8,
+  "unused_source_solid_indices": [
+    2,
+    3
+  ],
+  "parts": {
+    "palm": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 77562.31442818408,
+      "bbox_mm": [
+        -104.71856578222832,
+        -80.54774941164092,
+        0.0,
+        106.7185657822283,
+        105.5,
+        6.000000000000001
+      ],
+      "mesh_degenerate_facets_removed": 0
+    },
+    "handle": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 106238.30168422381,
+      "bbox_mm": [
+        -30.0,
+        -30.0,
+        -160.0,
+        30.0,
+        30.0,
+        0.0
+      ],
+      "mesh_degenerate_facets_removed": 0
+    },
+    "root": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 9901.496891681156,
+      "bbox_mm": [
+        -21.0,
+        -14.0,
+        -18.0,
+        21.0,
+        16.39203120717487,
+        13.556579051514609
+      ],
+      "mesh_degenerate_facets_removed": 0
+    },
+    "proximal": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 22425.444620611466,
+      "bbox_mm": [
+        -13.3,
+        -9.8,
+        -7.0,
+        18.0,
+        19.5,
+        77.0
+      ],
+      "mesh_degenerate_facets_removed": 0
+    },
+    "distal": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 13158.200615081167,
+      "bbox_mm": [
+        -13.3,
+        -9.800000000000004,
+        -7.0,
+        13.3,
+        19.5,
+        48.0
+      ],
+      "mesh_degenerate_facets_removed": 0
+    },
+    "pad_proximal": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 3321.12,
+      "bbox_mm": [
+        -11.0,
+        -14.8,
+        14.0,
+        11.0,
+        -9.8,
+        48.0
+      ],
+      "mesh_degenerate_facets_removed": 0
+    },
+    "pad_distal": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 3159.57,
+      "bbox_mm": [
+        -11.0,
+        -15.4,
+        10.0,
+        11.0,
+        -9.8,
+        50.5
+      ],
+      "mesh_degenerate_facets_removed": 0
+    },
+    "cradle": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 17705.49920968869,
+      "bbox_mm": [
+        -33.0,
+        -22.5,
+        -14.5,
+        29.0,
+        40.0,
+        10.600000000000001
+      ],
+      "mesh_degenerate_facets_removed": 0
+    },
+    "clamp": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 12984.280179460897,
+      "bbox_mm": [
+        -33.0,
+        -22.5,
+        10.6,
+        29.0,
+        40.0,
+        32.0
+      ],
+      "mesh_degenerate_facets_removed": 0
+    },
+    "spool": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 3162.704156221916,
+      "bbox_mm": [
+        27.0,
+        -13.0,
+        -13.0,
+        36.5,
+        13.0,
+        13.0
+      ],
+      "mesh_degenerate_facets_removed": 0
+    },
+    "guide_front": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1787.090368586285,
+      "bbox_mm": [
+        -3.0,
+        -14.2,
+        -38.0,
+        36.5,
+        -10.899999999999999,
+        -18.0
+      ],
+      "mesh_degenerate_facets_removed": 2
+    },
+    "guide_back": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2115.2837362069577,
+      "bbox_mm": [
+        -3.0,
+        -10.900000000000002,
+        -38.0,
+        37.0,
+        -2.1000000000000005,
+        -18.0
+      ],
+      "mesh_degenerate_facets_removed": 2
+    },
+    "motor_body": {
+      "valid": true,
+      "solids": 4,
+      "volume_mm3": 25632.201837788412,
+      "bbox_mm": [
+        -25.7,
+        -9.969562614261205,
+        -10.01956451818,
+        25.5000000000005,
+        29.969562614260003,
+        10.01956451818
+      ]
+    },
+    "main_horn": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 644.4097682896455,
+      "bbox_mm": [
+        21.700000000000003,
+        -9.999999999999998,
+        -10.0,
+        26.500000000000007,
+        10.000000000000002,
+        10.0
+      ]
+    },
+    "slave_horn": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 569.9102364519583,
+      "bbox_mm": [
+        -24.900000000000006,
+        -10.0,
+        -10.0,
+        -21.799999999999997,
+        10.0,
+        10.0
+      ]
+    },
+    "joint_sleeve": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 761.0508203321276,
+      "bbox_mm": [
+        -12.5,
+        -3.5,
+        -3.5,
+        12.5,
+        3.5,
+        3.5
+      ]
+    }
+  },
+  "parameters": {
+    "units": "mm",
+    "root_radius": 65.0,
+    "root_height": 24.0,
+    "proximal_axis_distance": 62.0,
+    "distal_axis_to_tip": 48.0,
+    "palm_thickness": 6.0,
+    "joint_hole_diameter": 7.2,
+    "joint_pin_diameter": 3.0,
+    "hinge_side_clearance": 0.3,
+    "tendon_diameter": 0.8,
+    "tendon_bore_diameter": 2.4,
+    "spool_cable_center_radius": 10.9,
+    "motor_axis_z": -32.0,
+    "poses": {
+      "OPEN": [
+        4.0,
+        4.0
+      ],
+      "ROOT_FIRST_REFERENCE": [
+        20.0,
+        5.0
+      ],
+      "WRAP_REFERENCE": [
+        15.0,
+        25.0
+      ]
+    },
+    "version": "V10",
+    "root_band_effective_stiffness_N_per_m": 500.0,
+    "distal_band_effective_stiffness_N_per_m": 350.0,
+    "elastic_neck_width": 6.0,
+    "pip_peg_base_y": 12.0,
+    "root_peg_base_y": 9.0,
+    "root_band_line_y": 12.0,
+    "pip_band_line_y": 15.0,
+    "root_band_corner_y": 13.5,
+    "pip_band_corner_y": 16.5,
+    "pads": {
+      "back_y": -9.8,
+      "center_front_y": -14.0,
+      "proximal_sections": [
+        [
+          14.0,
+          22.0,
+          0.8
+        ],
+        [
+          48.0,
+          22.0,
+          0.8
+        ]
+      ],
+      "distal_sections": [
+        [
+          10,
+          20,
+          0.8,
+          -14
+        ],
+        [
+          30,
+          22,
+          0.8,
+          -14
+        ],
+        [
+          37,
+          18,
+          0.8,
+          -14
+        ],
+        [
+          42,
+          12,
+          0.6,
+          -14.5
+        ],
+        [
+          46,
+          8,
+          0.4,
+          -15
+        ],
+        [
+          48,
+          6,
+          0.3,
+          -15
+        ],
+        [
+          49.5,
+          3,
+          0.2,
+          -14.7
+        ],
+        [
+          50.5,
+          1,
+          0.1,
+          -14
+        ]
+      ]
+    },
+    "palm_hub_diameter": 64.0,
+    "palm_spoke_width": 18.0,
+    "palm_mount_rail_width": 9.0,
+    "handle_flange_diameter": 60.0,
+    "handle_flange_thickness": 8.0,
+    "handle_mount_bolt_circle_diameter": 48.0,
+    "handle_mount_hole_diameter": 4.4,
+    "handle_grip_diameter": 36.0,
+    "handle_grip_length": 100.0,
+    "handle_grip_top_z": -54.0,
+    "handle_bottom": -160.0,
+    "handle_butt_diameter": 42.0,
+    "handle_butt_height": 6.0,
+    "handle_cable_bore_diameter": 24.0,
+    "joint_sleeve_od": 7.0,
+    "joint_sleeve_id": 3.2,
+    "joint_sleeve_length": 25.0,
+    "joint_fork_outer_width": 24.4,
+    "joint_fork_inner_width": 17.0,
+    "joint_rotor_width": 16.0,
+    "joint_thrust_washer_thickness": 0.3,
+    "joint_outer_washer_thickness": 1.0,
+    "joint_fork_bore_diameter": 7.2,
+    "joint_open_stop_angle_deg": 4.0,
+    "joint_stop_z0": 9.0,
+    "joint_stop_z1": 14.0,
+    "joint_stop_x0": 8.8,
+    "joint_stop_x1": 13.3,
+    "joint_stop_back_y": 14.0,
+    "joint_stop_front_y": 5.5,
+    "joint_stop_stem_front_y": 7.0,
+    "joint_stop_stem_z0": -12.0,
+    "joint_wing_x0": 7.0,
+    "joint_wing_front_y": -5.5,
+    "joint_stop_foot_top_z": 8.0,
+    "joint_stop_foot_front_y": 4.0,
+    "joint_thrust_washer_id": 7.2,
+    "joint_thrust_washer_od": 11.0,
+    "joint_outer_washer_id": 3.2,
+    "joint_outer_washer_od": 10.0,
+    "joint_bearing_friction_coefficient": 0.15,
+    "joint_thrust_friction_coefficient": 0.15,
+    "joint_axial_bias_N": 0.1,
+    "joint_extra_breakaway_Nm": 2e-05,
+    "joint_friction_load_cap_N": 100.0,
+    "joint_stop_combined_face_error_mm": 0.3,
+    "joint_stop_effective_modulus_MPa": 1000.0,
+    "joint_sleeve_modulus_MPa": 70000.0,
+    "joint_bolt_preload_check_N": 300.0,
+    "joint_pin_bolt_length": 35.0,
+    "joint_pin_nut_height": 4.0,
+    "band_free_length_ratio": 0.85,
+    "proximal_mass_kg": 0.03,
+    "distal_mass_kg": 0.017,
+    "proximal_com_z_mm": 42.0,
+    "joint_stop_additional_compliance_mm": 0.03,
+    "joint_damper_fluid_cSt": 1000000.0,
+    "joint_damper_fluid_density_kg_m3": 978.0,
+    "joint_damper_active_length_mm": 16.0,
+    "joint_nut_cage_outer_radius": 7.0,
+    "joint_nut_pocket_af": 5.8,
+    "joint_nut_cage_end_x": 18.0,
+    "joint_nut_relief_radius": 5.25,
+    "joint_nut_relief_end_x": 13.8,
+    "elastic_neck_diameter": 5.0,
+    "elastic_cap_diameter": 9.5,
+    "joint_stop_allowable_compression_MPa": 8.0,
+    "finger_body_thickness": 14.0,
+    "proximal_crossbar_thickness": 12.0,
+    "proximal_crossbar_depth": 18.0,
+    "proximal_inertia_x_kgm2": 1.6e-05,
+    "distal_inertia_x_kgm2": 4.2e-06,
+    "pad_friction_nominal": 1.0,
+    "proximal_pad_backing_width_mm": 20.0,
+    "distal_pad_backing_width_mm": 20.0,
+    "mechanical_extension_stops_enabled": true,
+    "joint_stop_layout": "compact",
+    "contact_friction_scope": "pads_only",
+    "table_object_friction": 0.5,
+    "rigid_object_friction": 0.3,
+    "root_mount_outward_deg": 10.0,
+    "root_max_flexion_deg": 60.0,
+    "rigid_density_kg_m3": 1240.0,
+    "pad_density_kg_m3": 1200.0,
+    "motion_stabilization_after_lift_s": 3.0,
+    "moving_hardware_lumps": {
+      "proximal": {
+        "mass_kg": 0.006,
+        "center_mm": [
+          0,
+          0,
+          62
+        ]
+      },
+      "distal": {
+        "mass_kg": 0.001,
+        "center_mm": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "cadquery_version": "2.7.0",
+  "moving_inertials": {
+    "proximal": {
+      "mass_kg": 0.037792895329558214,
+      "center_m": [
+        0.0002851982845016655,
+        -0.0007455555059903966,
+        0.03876832092644843
+      ],
+      "fullinertia_kg_m2": [
+        1.7253161385941366e-05,
+        1.725453353898761e-05,
+        3.1973853177736435e-06,
+        -6.29390409503429e-09,
+        -2.5040193072222204e-07,
+        -1.0812205295007923e-06
+      ],
+      "eigenvalues_kg_m2": [
+        3.1102837551487637e-06,
+        1.725557462826716e-05,
+        1.73392218592867e-05
+      ],
+      "assumptions": "Uniform assumed rigid/pad densities; moving hardware point mass. Not measured."
+    },
+    "distal": {
+      "mass_kg": 0.02110765276270065,
+      "center_m": [
+        -1.4896200153010618e-19,
+        -0.0025775229346631638,
+        0.02051382416774872
+      ],
+      "fullinertia_kg_m2": [
+        4.74023925135036e-06,
+        4.366222724971637e-06,
+        1.4543926809891773e-06,
+        2.6777142722872455e-23,
+        -1.1982945982297265e-22,
+        4.6966439879857e-07
+      ],
+      "eigenvalues_kg_m2": [
+        1.3805125537010848e-06,
+        4.440102852259731e-06,
+        4.74023925135036e-06
+      ],
+      "assumptions": "Uniform assumed rigid/pad densities; moving hardware point mass. Not measured."
+    }
+  },
+  "neutral_route_length_mm": 192.253046025454,
+  "poses": {
+    "OPEN": {
+      "q_deg": [
+        4.0,
+        4.0
+      ],
+      "route_length_mm": 192.253046025454,
+      "takeup_mm": 0.0,
+      "spool_rotation_deg": 0.0
+    },
+    "ROOT_FIRST_REFERENCE": {
+      "q_deg": [
+        20.0,
+        5.0
+      ],
+      "route_length_mm": 189.4416264808456,
+      "takeup_mm": 2.8114195446084125,
+      "spool_rotation_deg": 14.778208655656323
+    },
+    "WRAP_REFERENCE": {
+      "q_deg": [
+        15.0,
+        25.0
+      ],
+      "route_length_mm": 187.23043286139966,
+      "takeup_mm": 5.0226131640543485,
+      "spool_rotation_deg": 26.40133361717089
+    }
+  }
+}

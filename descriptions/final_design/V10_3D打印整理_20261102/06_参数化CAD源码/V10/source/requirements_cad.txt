@@ -1,0 +1,4 @@
+cadquery==2.7.0
+numpy>=1.24,<3
+scipy>=1.11
+trimesh>=4

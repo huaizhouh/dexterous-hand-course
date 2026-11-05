@@ -1,0 +1,32 @@
+{
+  "total": 1320,
+  "passed": 0,
+  "core_total": 1316,
+  "core_passed": 0,
+  "skipped_failed": 1320,
+  "executed_trials": 108,
+  "skipped_trials": 1212,
+  "print_gate_passed": false,
+  "print_gate_reasons": [
+    "core_grasp_failures",
+    "skipped_trials_remain_unvalidated",
+    "cad_geometry_not_passed",
+    "hinge_load_not_passed"
+  ],
+  "status": "未通过整套打印门槛；失败项已保留并继续后续测试",
+  "failure_counts": {
+    "lift_50mm": 108,
+    "two_fingers_throughout_hold": 104,
+    "unsupported_throughout_hold": 108,
+    "no_hardware_floor_collision": 45,
+    "not_run_after_center_failure": 1212,
+    "no_load_truncation": 29,
+    "stable_placement_after_release": 16,
+    "return_below_4deg": 38,
+    "no_unexpected_self_contact": 35,
+    "drift_below_8mm": 9
+  },
+  "expected_trials": 1316,
+  "completed_trials": 1316,
+  "scope": "Discrete numerical trials under assumed material/friction/working torque; not hardware certification"
+}

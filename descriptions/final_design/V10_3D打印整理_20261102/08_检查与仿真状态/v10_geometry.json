@@ -1,0 +1,138 @@
+{
+  "passed": true,
+  "invalid_step_parts": [],
+  "joint_sweep": [
+    {
+      "joint": "root",
+      "angle_deg": 4,
+      "intersection_mm3": 0.0,
+      "intentional_stop_mm3": 0.0,
+      "unexpected_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "joint": "root",
+      "angle_deg": 10,
+      "intersection_mm3": 0.0,
+      "intentional_stop_mm3": 0.0,
+      "unexpected_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "joint": "root",
+      "angle_deg": 20,
+      "intersection_mm3": 0.0,
+      "intentional_stop_mm3": 0.0,
+      "unexpected_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "joint": "root",
+      "angle_deg": 35,
+      "intersection_mm3": 0.0,
+      "intentional_stop_mm3": 0.0,
+      "unexpected_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "joint": "root",
+      "angle_deg": 45,
+      "intersection_mm3": 0.0,
+      "intentional_stop_mm3": 0.0,
+      "unexpected_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "joint": "root",
+      "angle_deg": 60,
+      "intersection_mm3": 0.0,
+      "intentional_stop_mm3": 0.0,
+      "unexpected_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "joint": "pip",
+      "angle_deg": 4,
+      "intersection_mm3": 0.0,
+      "intentional_stop_mm3": 0.0,
+      "unexpected_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "joint": "pip",
+      "angle_deg": 15,
+      "intersection_mm3": 0.0,
+      "intentional_stop_mm3": 0.0,
+      "unexpected_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "joint": "pip",
+      "angle_deg": 30,
+      "intersection_mm3": 0.0,
+      "intentional_stop_mm3": 0.0,
+      "unexpected_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "joint": "pip",
+      "angle_deg": 50,
+      "intersection_mm3": 0.0,
+      "intentional_stop_mm3": 0.0,
+      "unexpected_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "joint": "pip",
+      "angle_deg": 70,
+      "intersection_mm3": 0.0,
+      "intentional_stop_mm3": 0.0,
+      "unexpected_mm3": 0.0,
+      "passed": true
+    }
+  ],
+  "mechanical_stop_negative_controls": [
+    {
+      "joint": "root",
+      "forced_angle_deg": 0,
+      "interference_mm3": 33.40702421533326,
+      "expected_mechanical_stop_interference": true
+    },
+    {
+      "joint": "pip",
+      "forced_angle_deg": 0,
+      "interference_mm3": 33.407024215348514,
+      "expected_mechanical_stop_interference": true
+    }
+  ],
+  "whole_hand_poses": [
+    {
+      "pose": "OPEN",
+      "joint_deg": [
+        4.0,
+        4.0
+      ],
+      "cross_finger_rigid_interferences": [],
+      "passed": true
+    },
+    {
+      "pose": "ROOT_FIRST_REFERENCE",
+      "joint_deg": [
+        20.0,
+        5.0
+      ],
+      "cross_finger_rigid_interferences": [],
+      "passed": true
+    },
+    {
+      "pose": "WRAP_REFERENCE",
+      "joint_deg": [
+        15.0,
+        25.0
+      ],
+      "cross_finger_rigid_interferences": [],
+      "passed": true
+    }
+  ],
+  "scope": "Sampled exact rigid-solid geometry and negative opening controls. TPU/bands may touch; no material, fatigue or real motor qualification."
+}

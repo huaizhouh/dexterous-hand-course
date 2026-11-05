@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="410" viewBox="0 0 1000 410">
+<rect width="1000" height="410" fill="white"/>
+<g font-family="Arial,sans-serif" font-size="15" fill="#172b3a">
+<text x="25" y="30">Tabletop 100 g / discrete simulation coverage</text>
+<text x="220" y="70">10 mm</text>
+<text x="293" y="70">20 mm</text>
+<text x="366" y="70">30 mm</text>
+<text x="439" y="70">40 mm</text>
+<text x="512" y="70">50 mm</text>
+<text x="585" y="70">60 mm</text>
+<text x="658" y="70">70 mm</text>
+<text x="731" y="70">80 mm</text>
+<text x="804" y="70">90 mm</text>
+<text x="877" y="70">100 mm</text>
+<text x="25" y="112">sphere vertical</text>
+<rect x="215" y="85" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="223" y="102" fill="white">0/2</text>
+<text x="223" y="117" fill="white" font-size="10">12 skipped</text>
+<rect x="288" y="85" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="296" y="102" fill="white">0/2</text>
+<text x="296" y="117" fill="white" font-size="10">12 skipped</text>
+<rect x="361" y="85" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="369" y="102" fill="white">0/2</text>
+<text x="369" y="117" fill="white" font-size="10">12 skipped</text>
+<rect x="434" y="85" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="442" y="102" fill="white">0/2</text>
+<text x="442" y="117" fill="white" font-size="10">12 skipped</text>
+<rect x="507" y="85" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="515" y="102" fill="white">0/2</text>
+<text x="515" y="117" fill="white" font-size="10">12 skipped</text>
+<rect x="580" y="85" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="588" y="102" fill="white">0/2</text>
+<text x="588" y="117" fill="white" font-size="10">12 skipped</text>
+<rect x="653" y="85" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="661" y="102" fill="white">0/2</text>
+<text x="661" y="117" fill="white" font-size="10">12 skipped</text>
+<rect x="726" y="85" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="734" y="102" fill="white">0/2</text>
+<text x="734" y="117" fill="white" font-size="10">12 skipped</text>
+<rect x="799" y="85" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="807" y="102" fill="white">0/2</text>
+<text x="807" y="117" fill="white" font-size="10">12 skipped</text>
+<rect x="872" y="85" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="880" y="102" fill="white">0/2</text>
+<text x="880" y="117" fill="white" font-size="10">12 skipped</text>
+<text x="25" y="160">box vertical</text>
+<rect x="215" y="133" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="223" y="150" fill="white">0/2</text>
+<text x="223" y="165" fill="white" font-size="10">40 skipped</text>
+<rect x="288" y="133" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="296" y="150" fill="white">0/2</text>
+<text x="296" y="165" fill="white" font-size="10">40 skipped</text>
+<rect x="361" y="133" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="369" y="150" fill="white">0/2</text>
+<text x="369" y="165" fill="white" font-size="10">40 skipped</text>
+<rect x="434" y="133" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="442" y="150" fill="white">0/2</text>
+<text x="442" y="165" fill="white" font-size="10">40 skipped</text>
+<rect x="507" y="133" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="515" y="150" fill="white">0/2</text>
+<text x="515" y="165" fill="white" font-size="10">40 skipped</text>
+<rect x="580" y="133" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="588" y="150" fill="white">0/2</text>
+<text x="588" y="165" fill="white" font-size="10">40 skipped</text>
+<rect x="653" y="133" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="661" y="150" fill="white">0/2</text>
+<text x="661" y="165" fill="white" font-size="10">40 skipped</text>
+<rect x="726" y="133" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="734" y="150" fill="white">0/2</text>
+<text x="734" y="165" fill="white" font-size="10">40 skipped</text>
+<rect x="799" y="133" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="807" y="150" fill="white">0/2</text>
+<text x="807" y="165" fill="white" font-size="10">40 skipped</text>
+<rect x="872" y="133" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="880" y="150" fill="white">0/2</text>
+<text x="880" y="165" fill="white" font-size="10">40 skipped</text>
+<text x="25" y="208">cylinder vertical</text>
+<rect x="215" y="181" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="223" y="198" fill="white">0/2</text>
+<text x="223" y="213" fill="white" font-size="10">12 skipped</text>
+<rect x="288" y="181" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="296" y="198" fill="white">0/2</text>
+<text x="296" y="213" fill="white" font-size="10">12 skipped</text>
+<rect x="361" y="181" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="369" y="198" fill="white">0/2</text>
+<text x="369" y="213" fill="white" font-size="10">12 skipped</text>
+<rect x="434" y="181" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="442" y="198" fill="white">0/2</text>
+<text x="442" y="213" fill="white" font-size="10">12 skipped</text>
+<rect x="507" y="181" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="515" y="198" fill="white">0/2</text>
+<text x="515" y="213" fill="white" font-size="10">12 skipped</text>
+<rect x="580" y="181" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="588" y="198" fill="white">0/2</text>
+<text x="588" y="213" fill="white" font-size="10">12 skipped</text>
+<rect x="653" y="181" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="661" y="198" fill="white">0/2</text>
+<text x="661" y="213" fill="white" font-size="10">12 skipped</text>
+<rect x="726" y="181" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="734" y="198" fill="white">0/2</text>
+<text x="734" y="213" fill="white" font-size="10">12 skipped</text>
+<rect x="799" y="181" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="807" y="198" fill="white">0/2</text>
+<text x="807" y="213" fill="white" font-size="10">12 skipped</text>
+<rect x="872" y="181" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="880" y="198" fill="white">0/2</text>
+<text x="880" y="213" fill="white" font-size="10">12 skipped</text>
+<text x="25" y="256">capsule vertical</text>
+<rect x="215" y="229" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="223" y="246" fill="white">0/2</text>
+<text x="223" y="261" fill="white" font-size="10">12 skipped</text>
+<rect x="288" y="229" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="296" y="246" fill="white">0/2</text>
+<text x="296" y="261" fill="white" font-size="10">12 skipped</text>
+<rect x="361" y="229" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="369" y="246" fill="white">0/2</text>
+<text x="369" y="261" fill="white" font-size="10">12 skipped</text>
+<rect x="434" y="229" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="442" y="246" fill="white">0/2</text>
+<text x="442" y="261" fill="white" font-size="10">12 skipped</text>
+<rect x="507" y="229" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="515" y="246" fill="white">0/2</text>
+<text x="515" y="261" fill="white" font-size="10">12 skipped</text>
+<rect x="580" y="229" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="588" y="246" fill="white">0/2</text>
+<text x="588" y="261" fill="white" font-size="10">12 skipped</text>
+<rect x="653" y="229" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="661" y="246" fill="white">0/2</text>
+<text x="661" y="261" fill="white" font-size="10">12 skipped</text>
+<rect x="726" y="229" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="734" y="246" fill="white">0/2</text>
+<text x="734" y="261" fill="white" font-size="10">12 skipped</text>
+<rect x="799" y="229" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="807" y="246" fill="white">0/2</text>
+<text x="807" y="261" fill="white" font-size="10">12 skipped</text>
+<rect x="872" y="229" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="880" y="246" fill="white">0/2</text>
+<text x="880" y="261" fill="white" font-size="10">12 skipped</text>
+<text x="25" y="304">capsule horizontal</text>
+<rect x="215" y="277" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="223" y="294" fill="white">0/2</text>
+<text x="223" y="309" fill="white" font-size="10">40 skipped</text>
+<rect x="288" y="277" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="296" y="294" fill="white">0/2</text>
+<text x="296" y="309" fill="white" font-size="10">40 skipped</text>
+<rect x="361" y="277" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="369" y="294" fill="white">0/2</text>
+<text x="369" y="309" fill="white" font-size="10">40 skipped</text>
+<rect x="434" y="277" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="442" y="294" fill="white">0/2</text>
+<text x="442" y="309" fill="white" font-size="10">40 skipped</text>
+<rect x="507" y="277" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="515" y="294" fill="white">0/2</text>
+<text x="515" y="309" fill="white" font-size="10">40 skipped</text>
+<rect x="580" y="277" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="588" y="294" fill="white">0/2</text>
+<text x="588" y="309" fill="white" font-size="10">40 skipped</text>
+<rect x="653" y="277" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="661" y="294" fill="white">0/2</text>
+<text x="661" y="309" fill="white" font-size="10">40 skipped</text>
+<rect x="726" y="277" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="734" y="294" fill="white">0/2</text>
+<text x="734" y="309" fill="white" font-size="10">40 skipped</text>
+<rect x="799" y="277" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="807" y="294" fill="white">0/2</text>
+<text x="807" y="309" fill="white" font-size="10">40 skipped</text>
+<rect x="872" y="277" width="66" height="38" rx="4" fill="#b85f66"/>
+<text x="880" y="294" fill="white">0/2</text>
+<text x="880" y="309" fill="white" font-size="10">40 skipped</text>
+<text x="25" y="365">Counts = passed / executed. Skipped trials are unvalidated. Red: failed; grey: untested.</text>
+<text x="25" y="390">Coverage depends on this run manifest. Passing a subset does not qualify full-hand printing.</text>
+</g></svg>
